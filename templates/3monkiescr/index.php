@@ -22,8 +22,9 @@ $itemid   = $app->input->getCmd('Itemid', '');
 //JHtml::_('bootstrap.framework');
 
 // Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/normalize.min.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
+
 
 
 ?>
