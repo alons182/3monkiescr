@@ -500,6 +500,21 @@ $(function() {
 
 	});
 
+	//ARENAL OVERNIGHT
+
+	$('.AM .detail-title').on('click', function(e){
+		
+		//debugger;
+		if($("#content-article").find('#'+e.currentTarget.id+' + div.description-day').css("display")=="none") 
+			{
+				$('.description-day').hide();
+				$("#content-article").find('#'+e.currentTarget.id+' + div.description-day').fadeIn(500);
+			}else
+				$("#content-article").find('#'+e.currentTarget.id+' + div.description-day').hide();
+
+
+	});
+
 	
 
 
