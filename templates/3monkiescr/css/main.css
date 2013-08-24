@@ -331,7 +331,8 @@ footer{margin-top:40px;}
 footer #bottom{height:auto;position:static;}
 footer #bottom #copyright,footer #bottom #redes,footer #bottom #patners{display:inline-block;float:none}
 footer #bottom #redes,footer #bottom #copyright{margin-left:20px}
-}@media only screen and (max-width:  480px){#left-container{margin-left:5px;}
+}@media only screen and (max-width:  480px){body{background-color:#fff;background-image:none !important}
+#left-container{margin-left:5px;}
 #left-container #contenido #content-article .tabs ul{position:static;}
 #left-container #contenido #content-article .tabs ul li{margin-bottom:5px}
 #left-container #menu-top .menu-top-item{display:block;margin-bottom:5px;width:98%;}
