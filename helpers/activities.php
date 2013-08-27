@@ -18,6 +18,7 @@ $query = $db->getQuery(true);
 $query->select('id, title');
 $query->from('#__content');
 $query->where("catid=8 and state=1 and (id<>44 and id<>45)");
+$query->order("title");
 
 $db->setQuery((string)$query);
 
