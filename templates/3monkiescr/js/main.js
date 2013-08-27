@@ -515,6 +515,16 @@ $(function() {
 
 	});
 
+
+	//LOGO LEGENDA
+	$('#logo').hover(function(){
+
+		$('#logo #legenda').stop().animate({top: "10px"}, 500,"easeOutBounce");
+
+	},function(){
+		$('#logo #legenda').stop().animate({top: "-24px"}, 500);
+	});
+
 	
 
 

@@ -91,7 +91,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
                 </section>
                 <section id="right-container">
                     <div id="logo">
-                        <a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/3monkiescr/img/logo.png" alt="3 Mokies Logo"></a>
+                        <a href="<?php echo $this->baseurl ?>"><div id="contenedor_legenda"></div><div id="legenda"></div><img src="<?php echo $this->baseurl ?>/templates/3monkiescr/img/logo.png" alt="3 Mokies Logo"></a>
                     </div>
                     <nav id="menu">
                         <jdoc:include type="modules" name="menu" style="none" />
