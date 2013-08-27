@@ -436,7 +436,7 @@ $(function() {
 			else
 				tour = "";*/
 
-			tour =	$('#content-title > h1').text();
+			tour =	$.trim($('#content-title > h1').text());
 				
 			//console.log(select[0]);
 			if(e.currentTarget.className =="tr")
