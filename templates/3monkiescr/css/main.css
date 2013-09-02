@@ -138,6 +138,7 @@ body > #wrap{height:auto;min-height:100%}
 .bgid-156{background-image:url("../img/pattern.png"),url("../img/monteverde-day-tour.jpg")}
 .bgid-157{background-image:url("../img/pattern.png"),url("../img/monteverde-overnight.jpg")}
 .bgid-158{background-image:url("../img/pattern.png"),url("../img/monteverde-activities.jpg")}
+.bgid-164{background-image:url("../img/pattern.png"),url("../img/fishing.jpg")}
 p{color:#2b3f30}
 #left-container{float:left;margin-left:20px;}
 #left-container #menu-top{height:80px;}
@@ -203,40 +204,43 @@ p{color:#2b3f30}
 #left-container #contenido #content-article article{display:none;font-size:14px;font-weight:500;}
 #left-container #contenido #content-article article h2{color:#b9da00;font-family:'Lato',sans-serif;font-size:24px;margin-bottom:10px;margin-top:0;text-transform:capitalize}
 #left-container #contenido #content-article article h3{color:#eeae11}
-#left-container #contenido #content-article article .description-person,#left-container #contenido #content-article article .description-activitie,#left-container #contenido #content-article article .description-day{display:none}
+#left-container #contenido #content-article article .description-person,#left-container #contenido #content-article article .description-activitie,#left-container #contenido #content-article article .description-day,#left-container #contenido #content-article article .description-season{display:none}
 #left-container #contenido #content-article .team #p1,#left-container #contenido #content-article .team #p2,#left-container #contenido #content-article .team #p3{cursor:pointer}
 #left-container #contenido #content-article .opactivities span{cursor:pointer}
 #left-container #contenido #content-article .opactivities span:hover{color:#eeae11}
 #left-container #contenido #content-article .AM .detail-title{cursor:pointer}
 #left-container #contenido #content-article .AM .detail-title:hover{color:#eeae11}
+#left-container #contenido #content-article .SF .detail-subtitle{cursor:pointer}
+#left-container #contenido #content-article .SF .detail-subtitle:hover{color:#eeae11}
+#left-container #contenido #content-article .fish-image{float:left;width:150px;margin-right:10px;margin-top:4px}
 #left-container #contenido #content-article .intro{display:block}
-#left-container #contenido #content-article .details,#left-container #contenido #content-article .rates{color:#2b3f30;}
-#left-container #contenido #content-article .details .detail,#left-container #contenido #content-article .rates .detail{display:block}
-#left-container #contenido #content-article .details .detail-title,#left-container #contenido #content-article .rates .detail-title{font-size:36px;margin-bottom:10px}
-#left-container #contenido #content-article .details .detail-subtitle,#left-container #contenido #content-article .rates .detail-subtitle{color:#416725;font-size:16px;font-weight:bold;margin-top:10px}
-#left-container #contenido #content-article .details #detail_left,#left-container #contenido #content-article .rates #detail_left{float:left;width:50%}
-#left-container #contenido #content-article .details #detail_right,#left-container #contenido #content-article .rates #detail_right{float:right;text-align:right;width:50%}
-#left-container #contenido #content-article .details .iconos,#left-container #contenido #content-article .rates .iconos{background:url("../img/iconos.png") no-repeat;display:inline-block;margin:5px;vertical-align:top}
-#left-container #contenido #content-article .details .hat,#left-container #contenido #content-article .rates .hat{background-position:-7px -122px;height:47px;width:68px}
-#left-container #contenido #content-article .details .sunglasses,#left-container #contenido #content-article .rates .sunglasses{background-position:-1120px -109px;height:51px;width:80px}
-#left-container #contenido #content-article .details .camera,#left-container #contenido #content-article .rates .camera{background-position:-111px -122px;height:47px;width:58px}
-#left-container #contenido #content-article .details .sunscreen,#left-container #contenido #content-article .rates .sunscreen{background-position:-235px -113px;height:60px;width:33px}
-#left-container #contenido #content-article .details .sandals,#left-container #contenido #content-article .rates .sandals{background-position:-437px -118px;height:54px;width:53px}
-#left-container #contenido #content-article .details .repelent,#left-container #contenido #content-article .rates .repelent{background-position:-75px -108px;height:61px;width:36px}
-#left-container #contenido #content-article .details .binoculares,#left-container #contenido #content-article .rates .binoculares{background-position:-171px -108px;height:61px;width:65px}
-#left-container #contenido #content-article .details .money,#left-container #contenido #content-article .rates .money{background-position:-272px -115px;height:61px;width:53px}
-#left-container #contenido #content-article .details .hiking-boots,#left-container #contenido #content-article .rates .hiking-boots{background-position:-325px -109px;height:63px;width:62px}
-#left-container #contenido #content-article .details .rain-gear,#left-container #contenido #content-article .rates .rain-gear{background-position:-389px -109px;height:63px;width:45px}
-#left-container #contenido #content-article .details .water-shoes,#left-container #contenido #content-article .rates .water-shoes{background-position:-491px -109px;height:63px;width:50px}
-#left-container #contenido #content-article .details .swinsuit,#left-container #contenido #content-article .rates .swinsuit{background-position:-547px -118px;height:54px;width:40px}
-#left-container #contenido #content-article .details .water-camera,#left-container #contenido #content-article .rates .water-camera{background-position:-592px -118px;height:54px;width:71px}
-#left-container #contenido #content-article .details .walking-shoes,#left-container #contenido #content-article .rates .walking-shoes{background-position:-674px -113px;height:47px;width:61px}
-#left-container #contenido #content-article .details .clothes,#left-container #contenido #content-article .rates .clothes{background-position:-738px -107px;height:54px;width:48px}
-#left-container #contenido #content-article .details .towel,#left-container #contenido #content-article .rates .towel{background-position:-793px -107px;height:54px;width:69px}
-#left-container #contenido #content-article .details .long-pants,#left-container #contenido #content-article .rates .long-pants{background-position:-867px -107px;height:54px;width:41px}
-#left-container #contenido #content-article .details .sneakers,#left-container #contenido #content-article .rates .sneakers{background-position:-912px -107px;height:54px;width:61px}
-#left-container #contenido #content-article .details .light-clothing,#left-container #contenido #content-article .rates .light-clothing{background-position:-975px -109px;height:51px;width:49px}
-#left-container #contenido #content-article .details .passport,#left-container #contenido #content-article .rates .passport{background-position:-1030px -109px;height:51px;width:80px}
+#left-container #contenido #content-article .details,#left-container #contenido #content-article .rates,#left-container #contenido #content-article .seasons{color:#2b3f30;}
+#left-container #contenido #content-article .details .detail,#left-container #contenido #content-article .rates .detail,#left-container #contenido #content-article .seasons .detail{display:block}
+#left-container #contenido #content-article .details .detail-title,#left-container #contenido #content-article .rates .detail-title,#left-container #contenido #content-article .seasons .detail-title{font-size:36px;margin-bottom:10px}
+#left-container #contenido #content-article .details .detail-subtitle,#left-container #contenido #content-article .rates .detail-subtitle,#left-container #contenido #content-article .seasons .detail-subtitle{color:#416725;font-size:16px;font-weight:bold;margin-top:10px}
+#left-container #contenido #content-article .details #detail_left,#left-container #contenido #content-article .rates #detail_left,#left-container #contenido #content-article .seasons #detail_left{float:left;width:50%}
+#left-container #contenido #content-article .details #detail_right,#left-container #contenido #content-article .rates #detail_right,#left-container #contenido #content-article .seasons #detail_right{float:right;text-align:right;width:50%}
+#left-container #contenido #content-article .details .iconos,#left-container #contenido #content-article .rates .iconos,#left-container #contenido #content-article .seasons .iconos{background:url("../img/iconos.png") no-repeat;display:inline-block;margin:5px;vertical-align:top}
+#left-container #contenido #content-article .details .hat,#left-container #contenido #content-article .rates .hat,#left-container #contenido #content-article .seasons .hat{background-position:-7px -122px;height:47px;width:68px}
+#left-container #contenido #content-article .details .sunglasses,#left-container #contenido #content-article .rates .sunglasses,#left-container #contenido #content-article .seasons .sunglasses{background-position:-1120px -109px;height:51px;width:80px}
+#left-container #contenido #content-article .details .camera,#left-container #contenido #content-article .rates .camera,#left-container #contenido #content-article .seasons .camera{background-position:-111px -122px;height:47px;width:58px}
+#left-container #contenido #content-article .details .sunscreen,#left-container #contenido #content-article .rates .sunscreen,#left-container #contenido #content-article .seasons .sunscreen{background-position:-235px -113px;height:60px;width:33px}
+#left-container #contenido #content-article .details .sandals,#left-container #contenido #content-article .rates .sandals,#left-container #contenido #content-article .seasons .sandals{background-position:-437px -118px;height:54px;width:53px}
+#left-container #contenido #content-article .details .repelent,#left-container #contenido #content-article .rates .repelent,#left-container #contenido #content-article .seasons .repelent{background-position:-75px -108px;height:61px;width:36px}
+#left-container #contenido #content-article .details .binoculares,#left-container #contenido #content-article .rates .binoculares,#left-container #contenido #content-article .seasons .binoculares{background-position:-171px -108px;height:61px;width:65px}
+#left-container #contenido #content-article .details .money,#left-container #contenido #content-article .rates .money,#left-container #contenido #content-article .seasons .money{background-position:-272px -115px;height:61px;width:53px}
+#left-container #contenido #content-article .details .hiking-boots,#left-container #contenido #content-article .rates .hiking-boots,#left-container #contenido #content-article .seasons .hiking-boots{background-position:-325px -109px;height:63px;width:62px}
+#left-container #contenido #content-article .details .rain-gear,#left-container #contenido #content-article .rates .rain-gear,#left-container #contenido #content-article .seasons .rain-gear{background-position:-389px -109px;height:63px;width:45px}
+#left-container #contenido #content-article .details .water-shoes,#left-container #contenido #content-article .rates .water-shoes,#left-container #contenido #content-article .seasons .water-shoes{background-position:-491px -109px;height:63px;width:50px}
+#left-container #contenido #content-article .details .swinsuit,#left-container #contenido #content-article .rates .swinsuit,#left-container #contenido #content-article .seasons .swinsuit{background-position:-547px -118px;height:54px;width:40px}
+#left-container #contenido #content-article .details .water-camera,#left-container #contenido #content-article .rates .water-camera,#left-container #contenido #content-article .seasons .water-camera{background-position:-592px -118px;height:54px;width:71px}
+#left-container #contenido #content-article .details .walking-shoes,#left-container #contenido #content-article .rates .walking-shoes,#left-container #contenido #content-article .seasons .walking-shoes{background-position:-674px -113px;height:47px;width:61px}
+#left-container #contenido #content-article .details .clothes,#left-container #contenido #content-article .rates .clothes,#left-container #contenido #content-article .seasons .clothes{background-position:-738px -107px;height:54px;width:48px}
+#left-container #contenido #content-article .details .towel,#left-container #contenido #content-article .rates .towel,#left-container #contenido #content-article .seasons .towel{background-position:-793px -107px;height:54px;width:69px}
+#left-container #contenido #content-article .details .long-pants,#left-container #contenido #content-article .rates .long-pants,#left-container #contenido #content-article .seasons .long-pants{background-position:-867px -107px;height:54px;width:41px}
+#left-container #contenido #content-article .details .sneakers,#left-container #contenido #content-article .rates .sneakers,#left-container #contenido #content-article .seasons .sneakers{background-position:-912px -107px;height:54px;width:61px}
+#left-container #contenido #content-article .details .light-clothing,#left-container #contenido #content-article .rates .light-clothing,#left-container #contenido #content-article .seasons .light-clothing{background-position:-975px -109px;height:51px;width:49px}
+#left-container #contenido #content-article .details .passport,#left-container #contenido #content-article .rates .passport,#left-container #contenido #content-article .seasons .passport{background-position:-1030px -109px;height:51px;width:80px}
 #left-container #contenido #content-article .tabs ul{float:right;margin:0;padding:0;position:absolute;right:20px;top:0;}
 #left-container #contenido #content-article .tabs ul #intro{background-color:#eeae11 !important}
 #left-container #contenido #content-article .tabs ul #details{background-color:#b9da00 !important}

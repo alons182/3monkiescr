@@ -426,6 +426,15 @@ $(function() {
 			}
 
 		}
+		if(e.currentTarget.id == "seasons")
+		{
+			if($("#content-article").find('article.seasons').css("display")=="none") 
+			{
+				$('#content-article article').hide();
+				$('#content-article').find('article.seasons').fadeIn(500);//show();
+			}
+
+		}
 		if(e.currentTarget.id == "booknow")
 		{
 			//debugger;
@@ -511,6 +520,21 @@ $(function() {
 				$("#content-article").find('#'+e.currentTarget.id+' + div.description-day').fadeIn(500);
 			}else
 				$("#content-article").find('#'+e.currentTarget.id+' + div.description-day').hide();
+
+
+	});
+
+	//SEASONS FISHING
+
+	$('.SF .detail-subtitle').on('click', function(e){
+		
+		//debugger;
+		if($("#content-article").find('#'+e.currentTarget.id+' + div.description-season').css("display")=="none") 
+			{
+				$('.description-season').hide();
+				$("#content-article").find('#'+e.currentTarget.id+' + div.description-season').fadeIn(500);
+			}else
+				$("#content-article").find('#'+e.currentTarget.id+' + div.description-season').hide();
 
 
 	});
