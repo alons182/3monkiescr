@@ -155,7 +155,7 @@ p{color:#2b3f30}
 #left-container #menu-top .menu-top-item:hover .border-item{display:block}
 #left-container #menu-top .large{width:215px !important}
 #left-container #menu-top .menu-top-item{background:rgba(0,0,0,0.6);color:#fff;cursor:pointer;display:inline-block;font-family:'Lato',sans-serif;font-size:14px;font-weight:300;height:70px;margin-right:.1em;padding-top:1em;text-align:center;vertical-align:top;width:95px;}
-#left-container #menu-top .menu-top-item .icon-envelop{float:left;margin-top:12px;padding-left:.5em}
+#left-container #menu-top .menu-top-item .icon-envelop{float:left;margin-top:12px;padding-left:.5em;height:47px}
 #left-container #menu-top .menu-top-item p{color:#fff;font-size:12px;margin:0 0 .2em 0;}
 #left-container #menu-top .menu-top-item p a{color:#fff;text-decoration:none}
 #left-container #menu-top .menu-top-item p a:hover{text-decoration:underline}
