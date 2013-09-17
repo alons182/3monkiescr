@@ -93,7 +93,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
                     <div id="logo">
                     <a href="<?php echo $this->baseurl ?>"><div id="contenedor_legenda"></div><div id="legenda"></div>
 
-                        
+                     <div id="mascara"></div>   
                         <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="210" height="130" id="Logo animado 3Monkies" align="middle">
                         <param name="movie" value="<?php echo $this->baseurl ?>/templates/3monkiescr/img/logo.swf" />
                         <param name="quality" value="high" />
