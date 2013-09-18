@@ -154,7 +154,7 @@ $(function() {
 	$.validator.setDefaults({ ignore: ":hidden:not(select)" })
 	//
 	// LOAD ACTIVITIES FORM RESERVATION
-	$.getJSON('/3monkies/helpers/activities.php', function(data) {
+	$.getJSON('/helpers/activities.php', function(data) {
 
 		  var items = [];
 
@@ -238,7 +238,7 @@ $(function() {
 		  submitHandler: function(form) {
 
 		    var formInput =  $('#reservationFormTour').serializeArray();
-			var url = "/3monkies/helpers/reservation.php";
+			var url = "/helpers/reservation.php";
 			
 			$.post(url, formInput, function(data){
 						console.log(data);
@@ -282,7 +282,7 @@ $(function() {
 		  submitHandler: function(form) {
 
 		    var formInput =  $('#reservationFormTrans').serializeArray();
-			var url = "/3monkies/helpers/reservation.php";
+			var url = "/helpers/reservation.php";
 			
 			$.post(url, formInput, function(data){
 						console.log(data);
@@ -327,7 +327,7 @@ $(function() {
 		  submitHandler: function(form) {
 
 		    var formInput =  $('#contactForm').serializeArray();
-			var url = "/3monkies/helpers/contact.php";
+			var url = "/helpers/contact.php";
 		
 			$.post(url, formInput, function(data){
 						console.log(data);
