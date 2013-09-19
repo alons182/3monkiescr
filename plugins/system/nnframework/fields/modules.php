@@ -4,11 +4,11 @@
  * Displays an article id field with a button
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -35,8 +35,8 @@ class JFormFieldNN_Modules extends JFormField
 		$db = JFactory::getDBO();
 
 		// load the list of modules
-		$query = $db->getQuery(true);
-		$query->select('m.id, m.title, m.position, m.module, m.published')
+		$query = $db->getQuery(true)
+			->select('m.id, m.title, m.position, m.module, m.published')
 			->from('#__modules AS m')
 			->where('m.client_id = 0')
 			->order('m.position, m.title, m.ordering, m.id');
@@ -57,7 +57,7 @@ class JFormFieldNN_Modules extends JFormField
 			}
 			$p = $item->position;
 
-			$item->title = '&nbsp;&nbsp;' . $item->title;
+			$item->title = $item->title;
 			if ($showtype) {
 				$item->title .= ' [' . $item->module . ']';
 			}

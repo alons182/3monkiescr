@@ -3,11 +3,11 @@
  * NoNumber Framework Helper File: Assignments: Tags
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 

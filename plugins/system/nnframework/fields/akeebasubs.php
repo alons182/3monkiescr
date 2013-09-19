@@ -4,11 +4,11 @@
  * Displays a multiselectbox of available Akeeba Subsriptons levels
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -23,11 +23,11 @@ class JFormFieldNN_AkeebaSubs extends JFormField
 
 	protected function getInput()
 	{
-		$this->params = $this->element->attributes();
-
 		if (!NNFrameworkFunctions::extensionInstalled('akeebasubs')) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
 
 		$group = $this->def('group', 'categories');
 
@@ -36,6 +36,8 @@ class JFormFieldNN_AkeebaSubs extends JFormField
 		if (!in_array($this->db->getPrefix() . 'akeebasubs_' . $group, $tables)) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
 
 		if (!is_array($this->value)) {
 			$this->value = explode(',', $this->value);
@@ -59,8 +61,8 @@ class JFormFieldNN_AkeebaSubs extends JFormField
 
 	function getLevels()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('l.akeebasubs_level_id as id, l.title AS name, l.enabled as published')
+		$query = $this->db->getQuery(true)
+			->select('l.akeebasubs_level_id as id, l.title AS name, l.enabled as published')
 			->from('#__akeebasubs_levels AS l')
 			->where('l.enabled > -1')
 			->order('l.title, l.akeebasubs_level_id');

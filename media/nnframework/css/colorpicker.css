@@ -2,11 +2,11 @@
  * Stylesheet for Element: ColorPicker
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 /**
@@ -15,7 +15,20 @@
  * Copyright (C) 2012 Tanguy Krotoff
  * Licensed under the MIT license
  */
-.clearfix {
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */
+/* >>> JUI >>> */
+/* <<< JUI <<< */.clearfix {
   *zoom: 1;
 }
 .clearfix:before,
@@ -37,7 +50,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 30px;
+  min-height: 28px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

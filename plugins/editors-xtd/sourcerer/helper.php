@@ -3,11 +3,11 @@
  * Plugin Helper File
  *
  * @package         Sourcerer
- * @version         4.1.9
+ * @version         4.2.0
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -55,6 +55,7 @@ class plgButtonSourcererHelper
 		}
 
 		$button->set('modal', true);
+		$button->set('class', 'btn');
 		$button->set('link', $link);
 		$button->set('text', trim($text));
 		$button->set('name', $icon);

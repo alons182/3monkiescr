@@ -1,11 +1,11 @@
 <?php
 /**
  * @package          NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author           Peter van Westen <peter@nonumber.nl>
  * @link             http://www.nonumber.nl
- * @copyright        Copyright © 2012 NoNumber
+ * @copyright        Copyright © 2013 NoNumber
  * @license          http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -85,7 +85,7 @@ class SearchModelSearch extends JModelLegacy
 		$this->setSearch($keyword, $match, $ordering);
 
 		//Set the search areas
-		$areas = $app->input->get('areas');
+		$areas = $app->input->get('areas', null, 'array');
 		$this->setAreas($areas);
 	}
 

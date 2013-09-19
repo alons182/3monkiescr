@@ -4,11 +4,11 @@
  * extra JHTML functions
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -25,6 +25,10 @@ class nnHtml
 			return '<fieldset class="radio">' . JText::_('NN_NO_ITEMS_FOUND') . '</fieldset>';
 		}
 
+		require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
+		$parameters = NNParameters::getInstance();
+		$params = $parameters->getPluginParams('nnframework');
+
 		if (!is_array($value)) {
 			$value = explode(',', $value);
 		}
@@ -36,13 +40,13 @@ class nnHtml
 				if (isset($option->links)) {
 					$count += count($option->links);
 				}
-				if ($count > 2500) {
+				if ($count > $params->max_list_count) {
 					break;
 				}
 			}
 		}
 
-		if ($options == -1 || $count > 2500) {
+		if ($options == -1 || $count > $params->max_list_count) {
 			if (is_array($value)) {
 				$value = implode(',', $value);
 			}
@@ -57,7 +61,7 @@ class nnHtml
 		$size = $size ? $size : 300;
 
 		if (!$multiple) {
-			return JHtml::_('select.genericlist', $options, $name, ' class="inputbox"', 'value', 'text', $value);
+			return JHtml::_('select.genericlist', $options, $name, 'class="inputbox"', 'value', 'text', $value);
 		}
 
 		JHtml::stylesheet('nnframework/multiselect.min.css', false, true);

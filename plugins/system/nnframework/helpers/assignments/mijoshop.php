@@ -1,6 +1,6 @@
 <?php
 /**
- * NoNumber Framework Helper File: Assignments: HikaShop
+ * NoNumber Framework Helper File: Assignments: MijoShop
  *
  * @package         NoNumber Framework
  * @version         13.8.5
@@ -14,30 +14,47 @@
 defined('_JEXEC') or die;
 
 /**
- * Assignments: HikaShop
+ * Assignments: MijoShop
  */
-class NNFrameworkAssignmentsHikaShop
+class NNFrameworkAssignmentsMijoShop
 {
+	function init(&$parent)
+	{
+		$input = JFactory::getApplication()->input;
+
+		$category_id = $input->getCmd('path', 0);
+		if (strpos($category_id, '_')) {
+			$category_id = end(explode('_', $category_id));
+		}
+
+		$parent->params->item_id = $input->getInt('product_id', 0);
+		$parent->params->category_id = $category_id;
+		$parent->params->id = ($parent->params->item_id) ? $parent->params->item_id : $parent->params->category_id;
+
+		$view = $input->getCmd('view', '');
+		if (empty($view)) {
+			$mijoshop = JPATH_ROOT . '/components/com_mijoshop/mijoshop/mijoshop.php';
+			if (!file_exists($mijoshop)) {
+				return;
+			}
+
+			require_once($mijoshop);
+
+			$route = $input->getString('route', '');
+			$view = MijoShop::get('router')->getView($route);
+		}
+
+		$parent->params->view = $view;
+	}
+
 	function passPageTypes(&$parent, &$params, $selection = array(), $assignment = 'all')
 	{
-		if ($parent->params->option != 'com_hikashop') {
-			return $parent->pass(0, $assignment);
-		}
-
-		$type = $parent->params->view;
-		if (
-			($type == 'product' && in_array($parent->params->layout, array('contact', 'show')))
-			|| ($type == 'user' && in_array($parent->params->layout, array('cpanel')))
-		) {
-			$type .= '_' . $parent->params->layout;
-		}
-
-		return $parent->passSimple($type, $selection, $assignment);
+		return $parent->passPageTypes('com_mijoshop', $selection, $assignment, 1);
 	}
 
 	function passCategories(&$parent, &$params, $selection = array(), $assignment = 'all', $article = 0)
 	{
-		if ($parent->params->option != 'com_hikashop') {
+		if ($parent->params->option != 'com_mijoshop') {
 			return $parent->pass(0, $assignment);
 		}
 
@@ -53,12 +70,12 @@ class NNFrameworkAssignmentsHikaShop
 		}
 
 		$cats = array();
-		if ($parent->params->view == 'category') {
-			$cats = $parent->params->id;
-		} else if ($parent->params->id) {
+		if ($parent->params->category_id) {
+			$cats = $parent->params->category_id;
+		} else if ($parent->params->item_id) {
 			$parent->q->clear()
 				->select('c.category_id')
-				->from('#__hikashop_product_category AS c')
+				->from('#__mijoshop_product_to_category AS c')
 				->where('c.product_id = ' . (int) $parent->params->id);
 			$parent->db->setQuery($parent->q);
 			$cats = $parent->db->loadColumn();
@@ -81,7 +98,7 @@ class NNFrameworkAssignmentsHikaShop
 
 	function passProducts(&$parent, &$params, $selection = array(), $assignment = 'all')
 	{
-		if (!$parent->params->id || $parent->params->option != 'com_hikashop' || $parent->params->view != 'product') {
+		if (!$parent->params->id || $parent->params->option != 'com_mijoshop' || $parent->params->view != 'product') {
 			return $parent->pass(0, $assignment);
 		}
 
@@ -90,6 +107,6 @@ class NNFrameworkAssignmentsHikaShop
 
 	function getCatParentIds(&$parent, $id = 0)
 	{
-		return $parent->getParentIds($id, 'hikashop_category', 'category_parent_id', 'category_id');
+		return $parent->getParentIds($id, 'mijoshop_category', 'parent_id', 'category_id');
 	}
 }

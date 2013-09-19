@@ -3,11 +3,11 @@
  * NoNumber Framework Helper File: Text
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -132,7 +132,7 @@ class NNText
 
 		$pre = preg_replace('#  #', ' ·  ', $pre);
 		$pre = preg_replace('#(( ·  )*) ·  #', '\1 »  ', $pre);
-		$pre = str_replace(' ', '&nbsp;', $pre);
+		$pre = str_replace('  ', ' &nbsp; ', $pre);
 
 		if ($type == 'separator') {
 			$pre = '[[:font-weight:normal;font-style:italic;color:grey;:]]' . $pre;
@@ -151,5 +151,101 @@ class NNText
 	{
 		$r = str_replace(array('\\', '$'), array('\\\\', '\\$'), $r);
 		return preg_replace('#' . preg_quote($s, '#') . '#', $r, $str, 1);
+	}
+
+	/**
+	 * Gets the full uri and optionaly adds/replaces the hash
+	 */
+	public static function getURI($hash = '')
+	{
+		$uri = JURI::getInstance();
+
+		if ($hash != '') {
+			$uri->setFragment($hash);
+		}
+
+		return $uri->toString();
+	}
+
+	/**
+	 * gets attribute from a tag string
+	 */
+	public static function getAttribute($attrib, $str)
+	{
+		// get attribute from string
+		$re = '#' . preg_quote($attrib, '#') . '="([^"]*)"#si';
+		if (preg_match($re, $str, $match)) {
+			return $match['1'];
+		}
+		return '';
+	}
+
+	/**
+	 * Creates an alias from a string
+	 * Based on stringURLUnicodeSlug method from the unicode slug plugin by infograf768
+	 */
+	public static function createAlias($str)
+	{
+		// Convert html entities
+		$str = html_entity_decode($str, ENT_COMPAT, 'UTF-8');
+
+		// Replace double byte whitespaces by single byte (East Asian languages)
+		$str = preg_replace('/\xE3\x80\x80/', ' ', $str);
+
+		// Remove any '-' from the string as they will be used as concatenator.
+		// Would be great to let the spaces in but only Firefox is friendly with this
+		$str = str_replace('-', ' ', $str);
+
+		// Replace forbidden characters by whitespaces
+		$str = preg_replace('#[,:\#\*"@+=;!&\.%()\]\/\'\\\\|\[]#', "\x20", $str);
+
+		// Delete all '?'
+		$str = str_replace('?', '', $str);
+
+		// Trim white spaces at beginning and end of alias and make lowercase
+		$str = trim($str);
+
+		// Remove any duplicate whitespace and replace whitespaces by hyphens
+		$str = preg_replace('#\x20+#', '-', $str);
+
+		return $str;
+	}
+
+	/**
+	 * Creates an array of different syntaxes of titles to match against a url variable
+	 */
+	public static function createUrlMatches($titles = array())
+	{
+		$matches = array();
+		foreach ($titles as $title) {
+			$matches[] = $title;
+			$matches[] = JString::strtolower($title);
+		}
+
+		$matches = array_unique($matches);
+
+		foreach ($matches as $title) {
+			$matches[] = htmlspecialchars(html_entity_decode($title, ENT_COMPAT, 'UTF-8'));
+		}
+
+		$matches = array_unique($matches);
+
+		foreach ($matches as $title) {
+			$matches[] = urlencode($title);
+			$matches[] = utf8_decode($title);
+			$matches[] = str_replace(' ', '', $title);
+			$matches[] = trim(preg_replace('#[^a-z0-9]#i', '', $title));
+			$matches[] = trim(preg_replace('#[^a-z]#i', '', $title));
+		}
+
+		$matches = array_unique($matches);
+
+		foreach ($matches as $i => $title) {
+			$matches[$i] = trim(str_replace('?', '', $title));
+		}
+
+		$matches = array_diff(array_unique($matches), array('', '-'));
+
+		return $matches;
 	}
 }

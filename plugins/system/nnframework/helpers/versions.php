@@ -3,11 +3,11 @@
  * NoNumber Framework Helper File: VersionCheck
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -31,7 +31,7 @@ class NoNumberVersions
 {
 	function getMessage($element = '', $xml = '', $version = '', $type = 'system', $admin = 1)
 	{
-		if (!$element || (!$xml && !$version)) {
+		if (!$element) {
 			return '';
 		}
 
@@ -54,7 +54,7 @@ class NoNumberVersions
 
 		JHtml::_('jquery.framework');
 		JHtml::script('nnframework/script.min.js', false, true);
-		$url = 'download.nonumber.nl/extensions.php?j=30&e=' . $alias;
+		$url = 'download.nonumber.nl/extensions.php?j=3&e=' . $alias;
 		$script = "
 			jQuery(document).ready(function() {
 				nnScripts.loadajax(
@@ -100,7 +100,7 @@ class NoNumberVersions
 		return html_entity_decode($msg, ENT_COMPAT, 'UTF-8');
 	}
 
-	function getCopyright($name, $version, $jedid = 0, $element = 'nnframework', $type = 'system', $admin = 1)
+	function getCopyright($name, $version, $jedid = 0, $element = 'nnframework', $type = 'system', $copyright = 1, $admin = 1)
 	{
 		$html = array();
 		$html[] = '<p style="text-align:center;">';
@@ -120,9 +120,11 @@ class NoNumberVersions
 			}
 			$html[] = ' v' . $version;
 		}
-		$html[] = '<br />' . JText::_('COPYRIGHT') . ' &copy; ' . date('Y') . ' NoNumber ' . JText::_('ALL_RIGHTS_RESERVED');
-		if ($jedid) {
-			$html[] = '<br />' . html_entity_decode(JText::sprintf('NN_RATE', $jedid));
+		if ($copyright) {
+			$html[] = '<br />' . JText::_('COPYRIGHT') . ' &copy; ' . date('Y') . ' NoNumber ' . JText::_('ALL_RIGHTS_RESERVED');
+			if ($jedid) {
+				$html[] = '<br />' . html_entity_decode(JText::sprintf('NN_RATE', $jedid));
+			}
 		}
 		$html[] = '</p>';
 

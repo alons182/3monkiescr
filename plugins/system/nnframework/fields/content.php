@@ -4,16 +4,17 @@
  * Displays a multiselectbox of available categories / items
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 defined('_JEXEC') or die;
 
+require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 
 class JFormFieldNN_Content extends JFormField
@@ -23,6 +24,10 @@ class JFormFieldNN_Content extends JFormField
 	protected function getInput()
 	{
 		$this->params = $this->element->attributes();
+
+		$parameters = NNParameters::getInstance();
+		$params = $parameters->getPluginParams('nnframework');
+		$this->max_list_count = $params->max_list_count;
 
 		$this->db = JFactory::getDbo();
 
@@ -49,8 +54,8 @@ class JFormFieldNN_Content extends JFormField
 
 	function getCategories()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('COUNT(*)')
+		$query = $this->db->getQuery(true)
+			->select('COUNT(*)')
 			->from('#__categories AS c')
 			->where('c.extension = ' . $this->db->quote('com_content'))
 			->where('c.parent_id > 0')
@@ -58,7 +63,7 @@ class JFormFieldNN_Content extends JFormField
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
-		if ($total > 2500) {
+		if ($total > $this->max_list_count) {
 			return -1;
 		}
 
@@ -74,8 +79,8 @@ class JFormFieldNN_Content extends JFormField
 			$options[] = JHtml::_('select.option', '-', '&nbsp;', 'value', 'text', 1);
 		}
 
-		$query = $this->db->getQuery(true);
-		$query->select('c.id, c.title, c.level, c.published')
+		$query->clear()
+			->select('c.id, c.title, c.level, c.published')
 			->from('#__categories AS c')
 			->where('c.extension = ' . $this->db->quote('com_content'))
 			->where('c.parent_id > 0')
@@ -97,8 +102,8 @@ class JFormFieldNN_Content extends JFormField
 
 	function getItems()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('i.id, i.title as name, c.title as cat, i.access as published')
+		$query = $this->db->getQuery(true)
+			->select('i.id, i.title as name, c.title as cat, i.access as published')
 			->from('#__content AS i')
 			->join('LEFT', '#__categories AS c ON c.id = i.catid')
 			->where('i.access > -1')

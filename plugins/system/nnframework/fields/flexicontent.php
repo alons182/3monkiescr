@@ -4,11 +4,11 @@
  * Displays a multiselectbox of available Flexicontent Tags / Types
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -59,8 +59,8 @@ class JFormFieldNN_FlexiContent extends JFormField
 
 	function getTags()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('t.name as id, t.name')
+		$query = $this->db->getQuery(true)
+			->select('t.name as id, t.name')
 			->from('#__flexicontent_tags AS t')
 			->where('t.published = 1')
 			->order('t.name');
@@ -72,8 +72,8 @@ class JFormFieldNN_FlexiContent extends JFormField
 
 	function getTypes()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('t.id, t.name')
+		$query = $this->db->getQuery(true)
+			->select('t.id, t.name')
 			->from('#__flexicontent_types AS t')
 			->where('t.published = 1')
 			->order('t.name, t.id');

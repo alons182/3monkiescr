@@ -3,11 +3,11 @@
  * NoNumber Framework Helper File: Functions
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
 
 class NNFrameworkFunctions
 {
-	var $_version = '13.6.10';
+	var $_version = '13.8.5';
 
 	public function getByUrl($url, $options = array())
 	{
@@ -51,13 +51,19 @@ class NNFrameworkFunctions
 			die;
 		}
 
+		header("Pragma: public");
+		header("Expires: 0");
+		header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+		header("Cache-Control: public");
+		header("Content-type: text/xml");
+
 		return self::getContents($url);
 	}
 
-	public function getContents($url)
+	public function getContents($url, $fopen = 0)
 	{
 		$html = '';
-		if (function_exists('curl_init') && function_exists('curl_exec')) {
+		if (!$fopen && function_exists('curl_init') && function_exists('curl_exec')) {
 			$html = $this->curl($url);
 		} else {
 			$file = @fopen($url, 'r');
@@ -175,5 +181,49 @@ class NNFrameworkFunctions
 				break;
 		}
 		return 0;
+	}
+
+	static function xmlToObject($url, $root)
+	{
+		$xml = new JXMLElement(JFile::read($url));
+
+		if ($root) {
+			if (!isset($xml->$root)) {
+				return new stdClass;
+			}
+			$xml = $xml->$root;
+		}
+
+		return self::convertXmlElement($xml);
+	}
+
+	static function convertXmlElement($el)
+	{
+		switch (gettype($el)) {
+			case 'object':
+				if (empty($el)) {
+					return '';
+				}
+				$el = (object) (array) $el;
+				break;
+			case 'array':
+				break;
+			default:
+				return $el;
+		}
+
+		$obj = array();
+		foreach ($el as $key => $val) {
+			if ('comment' == (string) $key) {
+				continue;
+			}
+			$obj[$key] = self::convertXmlElement($val);
+		}
+
+		if ('object' == gettype($el)) {
+			$obj = (object) $obj;
+		}
+
+		return $obj;
 	}
 }

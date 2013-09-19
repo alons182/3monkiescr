@@ -1,7 +1,7 @@
 <?php
 /**
- * Element: K2
- * Displays a multiselectbox of available K2 categories / tags / items
+ * Element: MijoShop
+ * Displays a multiselectbox of available MijoShop categories / products
  *
  * @package         NoNumber Framework
  * @version         13.8.5
@@ -18,14 +18,16 @@ require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 
-class JFormFieldNN_K2 extends JFormField
+class JFormFieldNN_MijoShop extends JFormField
 {
-	public $type = 'K2';
+	public $type = 'MijoShop';
+	public $store_id = 0;
+	public $language_id = 1;
 
 	protected function getInput()
 	{
-		if (!NNFrameworkFunctions::extensionInstalled('k2')) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_K2')) . '</fieldset>';
+		if (!NNFrameworkFunctions::extensionInstalled('mijoshop')) {
+			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
@@ -34,8 +36,8 @@ class JFormFieldNN_K2 extends JFormField
 
 		$this->db = JFactory::getDBO();
 		$tables = $this->db->getTableList();
-		if (!in_array($this->db->getPrefix() . 'k2_' . $group, $tables)) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_K2')) . '</fieldset>';
+		if (!in_array($this->db->getPrefix() . 'mijoshop_' . ($group == 'products' ? 'product' : 'category'), $tables)) {
+			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
@@ -43,6 +45,10 @@ class JFormFieldNN_K2 extends JFormField
 		$parameters = NNParameters::getInstance();
 		$params = $parameters->getPluginParams('nnframework');
 		$this->max_list_count = $params->max_list_count;
+
+		require_once(JPATH_ROOT . '/components/com_mijoshop/mijoshop/mijoshop.php');
+		$this->store_id = (int) MijoShop::get('opencart')->get('config')->get('config_store_id');
+		$this->language_id = (int) MijoShop::get('opencart')->get('config')->get('config_language_id');
 
 		if (!is_array($this->value)) {
 			$this->value = explode(',', $this->value);
@@ -68,8 +74,12 @@ class JFormFieldNN_K2 extends JFormField
 	{
 		$query = $this->db->getQuery(true)
 			->select('COUNT(*)')
-			->from('#__k2_categories AS c')
-			->where('c.published > -1');
+			->from('#__mijoshop_category AS c')
+			->join('INNER', '#__mijoshop_category_description AS cd ON c.category_id = cd.category_id')
+			->join('INNER', '#__mijoshop_category_to_store AS cts ON c.category_id = cts.category_id')
+			->where('c.status = 1')
+			->where('cd.language_id = ' . $this->language_id)
+			->where('cts.store_id = ' . $this->store_id);
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
@@ -77,17 +87,17 @@ class JFormFieldNN_K2 extends JFormField
 			return -1;
 		}
 
-		$get_categories = $this->def('getcategories', 1);
 		$show_ignore = $this->def('show_ignore');
 
 		$query->clear()
-			->select('c.id, c.parent AS parent_id, c.name AS title, c.published')
-			->from('#__k2_categories AS c')
-			->where('c.published > -1');
-		if (!$get_categories) {
-			$query->where('c.parent = 0');
-		}
-		$query->order('c.ordering, c.name');
+			->select('c.category_id AS id, c.parent_id, cd.name AS title, c.status AS published')
+			->from('#__mijoshop_category AS c')
+			->join('INNER', '#__mijoshop_category_description AS cd ON c.category_id = cd.category_id')
+			->join('INNER', '#__mijoshop_category_to_store AS cts ON c.category_id = cts.category_id')
+			->where('c.status = 1')
+			->where('cd.language_id = ' . $this->language_id)
+			->where('cts.store_id = ' . $this->store_id)
+			->order('c.sort_order, cd.name');
 		$this->db->setQuery($query);
 		$items = $this->db->loadObjectList();
 
@@ -95,18 +105,16 @@ class JFormFieldNN_K2 extends JFormField
 		// TODO: use node model
 		$children = array();
 
-		if ($items) {
-			// first pass - collect children
-			foreach ($items as $v) {
-				$pt = $v->parent_id;
-				$list = @$children[$pt] ? $children[$pt] : array();
-				array_push($list, $v);
-				$children[$pt] = $list;
-			}
+		// first pass - collect children
+		foreach ($items as $v) {
+			$pt = $v->parent_id;
+			$list = @$children[$pt] ? $children[$pt] : array();
+			array_push($list, $v);
+			$children[$pt] = $list;
 		}
 
 		// second pass - get an indent list of the items
-		$list = JHtml::_('menu.treerecurse', 0, '', array(), $children, 9999, 0, 0);
+		$list = JHtml::_('menu.treerecurse', (int) $root, '', array(), $children, 9999, 0, 0);
 
 		// assemble items to the array
 		$options = array();
@@ -125,33 +133,23 @@ class JFormFieldNN_K2 extends JFormField
 		return $options;
 	}
 
-	function getTags()
+	function getProducts()
 	{
 		$query = $this->db->getQuery(true)
-			->select('t.name')
-			->from('#__k2_tags AS t')
-			->where('t.published = 1')
-			->order('t.name');
-		$this->db->setQuery($query);
-		$list = $this->db->loadObjectList();
-
-		// assemble items to the array
-		$options = array();
-		foreach ($list as $item) {
-			$options[] = JHtml::_('select.option', $item->name, $item->name, 'value', 'text', 0);
-		}
-
-		return $options;
-	}
-
-	function getItems()
-	{
-		$query = $this->db->getQuery(true)
-			->select('i.id, i.title as name, c.name as cat, i.published')
-			->from('#__k2_items AS i')
-			->join('LEFT', '#__k2_categories AS c ON c.id = i.catid')
-			->where('i.published > -1')
-			->order('i.title, i.ordering, i.id');
+			->select('p.product_id as id, pd.name, p.model as number, cd.name AS cat, p.status AS published')
+			->from('#__mijoshop_product AS p')
+			->join('INNER', '#__mijoshop_product_description AS pd ON p.product_id = pd.product_id')
+			->join('INNER', '#__mijoshop_product_to_store AS pts ON p.product_id = pts.product_id')
+			->join('LEFT', '#__mijoshop_product_to_category AS ptc ON p.product_id = ptc.product_id')
+			->join('LEFT', '#__mijoshop_category_description AS cd ON ptc.category_id = cd.category_id')
+			->join('LEFT', '#__mijoshop_category_to_store AS cts ON ptc.category_id = cts.category_id')
+			->where('p.status = 1')
+			->where('p.date_available <= NOW()')
+			->where('pd.language_id = ' . $this->language_id)
+			->where('cts.store_id = ' . $this->store_id)
+			->where('cd.language_id = ' . $this->language_id)
+			->where('cts.store_id = ' . $this->store_id)
+			->order('pd.name, p.model');
 		$this->db->setQuery($query);
 		$list = $this->db->loadObjectList();
 

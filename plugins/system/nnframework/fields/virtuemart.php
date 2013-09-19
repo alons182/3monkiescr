@@ -4,17 +4,18 @@
  * Displays a multiselectbox of available VirtueMart categories / products
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 defined('_JEXEC') or die;
 
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
+require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 
 class JFormFieldNN_VirtueMart extends JFormField
@@ -23,11 +24,11 @@ class JFormFieldNN_VirtueMart extends JFormField
 
 	protected function getInput()
 	{
-		$this->params = $this->element->attributes();
-
 		if (!NNFrameworkFunctions::extensionInstalled('virtuemart')) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_VIRTUEMART')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
 
 		$group = $this->def('group', 'categories');
 
@@ -37,8 +38,14 @@ class JFormFieldNN_VirtueMart extends JFormField
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_VIRTUEMART')) . '</fieldset>';
 		}
 
-		$query = $this->db->getQuery(true);
-		$query->select('config')
+		$this->params = $this->element->attributes();
+
+		$parameters = NNParameters::getInstance();
+		$params = $parameters->getPluginParams('nnframework');
+		$this->max_list_count = $params->max_list_count;
+
+		$query = $this->db->getQuery(true)
+			->select('config')
 			->from('#__virtuemart_configs')
 			->where('virtuemart_config_id = 1');
 		$this->db->setQuery($query);
@@ -73,21 +80,21 @@ class JFormFieldNN_VirtueMart extends JFormField
 
 	function getCategories()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('COUNT(*)')
+		$query = $this->db->getQuery(true)
+			->select('COUNT(*)')
 			->from('#__virtuemart_categories AS c')
 			->where('c.published > -1');
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
-		if ($total > 2500) {
+		if ($total > $this->max_list_count) {
 			return -1;
 		}
 
 		$show_ignore = $this->def('show_ignore');
 
-		$query = $this->db->getQuery(true);
-		$query->select('c.virtuemart_category_id as id, cc.category_parent_id AS parent_id, l.category_name AS title, c.published')
+		$query->clear()
+			->select('c.virtuemart_category_id as id, cc.category_parent_id AS parent_id, l.category_name AS title, c.published')
 			->from('#__virtuemart_categories_' . $this->lang . ' AS l')
 			->join('', '#__virtuemart_categories AS c using (virtuemart_category_id)')
 			->join('LEFT', '#__virtuemart_category_categories AS cc ON l.virtuemart_category_id = cc.category_child_id')
@@ -132,8 +139,8 @@ class JFormFieldNN_VirtueMart extends JFormField
 
 	function getProducts()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('p.virtuemart_product_id as id, l.product_name AS name, p.product_sku as sku, cl.category_name AS cat, p.published')
+		$query = $this->db->getQuery(true)
+			->select('p.virtuemart_product_id as id, l.product_name AS name, p.product_sku as sku, cl.category_name AS cat, p.published')
 			->from('#__virtuemart_products AS p')
 			->join('LEFT', '#__virtuemart_products_' . $this->lang . ' AS l ON l.virtuemart_product_id = p.virtuemart_product_id')
 			->join('LEFT', '#__virtuemart_product_categories AS x ON x.virtuemart_product_id = p.virtuemart_product_id')

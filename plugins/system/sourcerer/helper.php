@@ -3,11 +3,11 @@
  * Plugin Helper File
  *
  * @package         Sourcerer
- * @version         4.1.9
+ * @version         4.2.0
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -59,7 +59,7 @@ class plgSystemSourcererHelper
 	/**
 	 * onContentPrepare
 	 */
-	function onContentPrepare(&$article, $params = '')
+	function onContentPrepare(&$article, $context = '')
 	{
 		$area = isset($article->created_by) ? 'articles' : 'other';
 
@@ -70,7 +70,11 @@ class plgSystemSourcererHelper
 
 		}
 
-		if (isset($article->text)) {
+		if (isset($article->text) &&
+			($context != 'com_content.category' ||
+				!(JFactory::getApplication()->input->get('view') == 'category' && !JFactory::getApplication()->input->get('layout'))
+			)
+		) {
 			$this->replace($article->text, $area, $article);
 		}
 		if (isset($article->description)) {

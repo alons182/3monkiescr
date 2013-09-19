@@ -4,17 +4,18 @@
  * Displays a multiselectbox of available ZOO categories
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 defined('_JEXEC') or die;
 
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
+require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 
 class JFormFieldNN_ZOO extends JFormField
@@ -23,11 +24,11 @@ class JFormFieldNN_ZOO extends JFormField
 
 	protected function getInput()
 	{
-		$this->params = $this->element->attributes();
-
 		if (!NNFrameworkFunctions::extensionInstalled('zoo')) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_ZOO')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
 
 		$group = $this->def('group', 'categories');
 
@@ -36,6 +37,12 @@ class JFormFieldNN_ZOO extends JFormField
 		if (!in_array($this->db->getPrefix() . 'zoo_' . ($group == 'applications' ? 'application' : 'category'), $tables)) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_ZOO')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
+
+		$parameters = NNParameters::getInstance();
+		$params = $parameters->getPluginParams('nnframework');
+		$this->max_list_count = $params->max_list_count;
 
 		if (!is_array($this->value)) {
 			$this->value = explode(',', $this->value);
@@ -59,14 +66,14 @@ class JFormFieldNN_ZOO extends JFormField
 
 	function getCategories()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('COUNT(*)')
+		$query = $this->db->getQuery(true)
+			->select('COUNT(*)')
 			->from('#__zoo_category AS c')
 			->where('c.published > -1');
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
-		if ($total > 2500) {
+		if ($total > $this->max_list_count) {
 			return -1;
 		}
 
@@ -81,16 +88,16 @@ class JFormFieldNN_ZOO extends JFormField
 			$options[] = JHtml::_('select.option', '-', '&nbsp;', 'value', 'text', 1);
 		}
 
-		$query = $this->db->getQuery(true);
-		$query->select('a.id, a.name')
+		$query->clear()
+			->select('a.id, a.name')
 			->from('#__zoo_application AS a')
 			->order('a.name, a.id');
 		$this->db->setQuery($query);
 		$apps = $this->db->loadObjectList();
 
 		foreach ($apps as $i => $app) {
-			$query = $this->db->getQuery(true);
-			$query->select('c.id, c.parent AS parent_id, c.name AS title, c.published')
+			$query->clear()
+				->select('c.id, c.parent AS parent_id, c.name AS title, c.published')
 				->from('#__zoo_category AS c')
 				->where('c.application_id = ' . (int) $app->id)
 				->where('c.published > -1')
@@ -135,8 +142,8 @@ class JFormFieldNN_ZOO extends JFormField
 
 	function getItems()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('i.id, i.name, a.name as app, i.state as published')
+		$query = $this->db->getQuery(true)
+			->select('i.id, i.name, a.name as app, i.state as published')
 			->from('#__zoo_item AS i')
 			->join('LEFT', '#__zoo_application AS a ON a.id = i.application_id')
 			->where('i.state > -1')

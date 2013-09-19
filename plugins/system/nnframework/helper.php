@@ -3,11 +3,11 @@
  * Plugin Helper File
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -88,6 +88,8 @@ class plgSystemNNFrameworkHelper
 
 		$html = JResponse::toString(JFactory::getApplication()->getCfg('gzip'));
 		$html = preg_replace('#\s*<' . 'link [^>]*href="[^"]*templates/system/[^"]*\.css[^"]*"[^>]* />#s', '', $html);
+		$html = preg_replace('#(<' . 'body [^>]*class=")#s', '\1nnpopup ', $html);
+		$html = str_replace('<' . 'body>', '<' . 'body class="nnpopup"', $html);
 
 		echo $html;
 

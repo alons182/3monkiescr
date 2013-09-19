@@ -3,11 +3,11 @@
  * NoNumber Framework Helper File: Assignments
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -44,6 +44,7 @@ class NNFrameworkAssignmentsHelper
 		$this->has['zoo'] = NNFrameworkFunctions::extensionInstalled('zoo');
 		$this->has['akeebasubs'] = NNFrameworkFunctions::extensionInstalled('akeebasubs');
 		$this->has['hikashop'] = NNFrameworkFunctions::extensionInstalled('hikashop');
+		$this->has['mijoshop'] = NNFrameworkFunctions::extensionInstalled('mijoshop');
 		$this->has['redshop'] = NNFrameworkFunctions::extensionInstalled('redshop');
 		$this->has['virtuemart'] = NNFrameworkFunctions::extensionInstalled('virtuemart');
 
@@ -86,12 +87,18 @@ class NNFrameworkAssignmentsHelper
 			'HikaShop_PageTypes',
 			'HikaShop_Categories',
 			'HikaShop_Products',
+			'MijoShop_PageTypes',
+			'MijoShop_Categories',
+			'MijoShop_Products',
 			'RedShop_PageTypes',
 			'RedShop_Categories',
 			'RedShop_Products',
 			'VirtueMart_PageTypes',
 			'VirtueMart_Categories',
 			'VirtueMart_Products',
+			'PHP'
+		);
+		$this->nonarray = array(
 			'PHP'
 		);
 
@@ -135,6 +142,11 @@ class NNFrameworkAssignmentsHelper
 					$extension = JFactory::getApplication()->input->getCmd('extension');
 					$this->params->option = $extension ? $extension : 'com_content';
 					$this->params->view = 'category';
+					break;
+				case 'com_breezingforms':
+					if($this->params->view == 'article') {
+						$this->params->option = 'com_content';
+					}
 					break;
 			}
 		}
@@ -185,6 +197,7 @@ class NNFrameworkAssignmentsHelper
 	function initParamsByType(&$params, $type = '')
 	{
 		$this->getAssignmentState($params->assignment);
+		$params->id = $type;
 		if (!(strpos($type, '_') === false)) {
 			$type = explode('_', $type, 2);
 			$params->maintype = $type['0'];
@@ -234,7 +247,7 @@ class NNFrameworkAssignmentsHelper
 								if (isset($this->classes[$c])) {
 									$method = 'pass' . $f;
 									if (method_exists('NNFrameworkAssignments' . $c, $method)) {
-										self::fixAssignment($assignments[$type]);
+										self::fixAssignment($assignments[$type], $assignments[$type]->id);
 										$pass = $this->classes[$c]->$method($this, $assignments[$type]->params, $assignments[$type]->selection, $assignments[$type]->assignment, $article);
 									}
 								}
@@ -250,11 +263,13 @@ class NNFrameworkAssignmentsHelper
 		return ($pass) ? 1 : 0;
 	}
 
-	function fixAssignment(&$a)
+	function fixAssignment(&$a, $type = '')
 	{
 		$a->params = isset($a->params) ? $a->params : new stdClass();
-		$a->selection = isset($a->selection) ? $a->selection : array();
 		$a->assignment = isset($a->assignment) ? $a->assignment : '';
+		if (!in_array($type, $this->nonarray)) {
+			$a->selection = isset($a->selection) ? $this->makeArray($a->selection) : array();
+		}
 	}
 
 	function pass($pass = 1, $assignment = 'all')
@@ -534,6 +549,20 @@ class NNFrameworkAssignmentsHelper
 			}
 
 			$this->setAssignmentParams($assignments, $params, 'hikashop', 'products', 1);
+		}
+
+		if ($this->has['mijoshop']) {
+			$this->setAssignmentParams($assignments, $params, 'mijoshop', 'pagetypes', 1);
+
+			list($id, $name) = $this->setAssignmentParams($assignments, $params, 'mijoshop', 'cats', 1);
+			if ($id) {
+				$assignments[$name]->params->inc_children = $params->{'assignto_' . $id . '_inc_children'};
+				$incs = $this->makeArray($params->{'assignto_' . $id . '_inc'});
+				$assignments[$name]->params->inc_categories = in_array('inc_cats', $incs);
+				$assignments[$name]->params->inc_items = in_array('inc_items', $incs);
+			}
+
+			$this->setAssignmentParams($assignments, $params, 'mijoshop', 'products', 1);
 		}
 
 		if ($this->has['redshop']) {

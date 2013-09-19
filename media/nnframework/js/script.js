@@ -2,11 +2,11 @@
  * Main JavaScript file
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
@@ -87,7 +87,7 @@
 				}
 
 				var new_version = dat['version'];
-				compare = nnScripts.compareVersions(version, new_version);
+				var compare = nnScripts.compareVersions(version, new_version);
 
 				if (compare != '<') {
 					return;
@@ -175,10 +175,13 @@
 					el = [];
 					$(this).children().each(function()
 					{
-						el[this.nodeName] = String($(this).text()).trim();
+						el[this.nodeName.toLowerCase()] = String($(this).text()).trim();
 					});
 					if (typeof(el.alias) !== 'undefined') {
 						obj[el.alias] = el;
+					}
+					if (typeof(el.extname) !== 'undefined' && el.extname != el.alias) {
+						obj[el.extname] = el;
 					}
 				});
 

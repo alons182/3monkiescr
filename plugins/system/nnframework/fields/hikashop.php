@@ -4,17 +4,18 @@
  * Displays a multiselectbox of available HikaShop categories / products
  *
  * @package         NoNumber Framework
- * @version         13.6.10
+ * @version         13.8.5
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
- * @copyright       Copyright © 2012 NoNumber All Rights Reserved
+ * @copyright       Copyright © 2013 NoNumber All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 defined('_JEXEC') or die;
 
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
+require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/text.php';
 
 class JFormFieldNN_HikaShop extends JFormField
@@ -23,11 +24,11 @@ class JFormFieldNN_HikaShop extends JFormField
 
 	protected function getInput()
 	{
-		$this->params = $this->element->attributes();
-
 		if (!NNFrameworkFunctions::extensionInstalled('hikashop')) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_HIKASHOP')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
 
 		$group = $this->def('group', 'categories');
 
@@ -36,6 +37,12 @@ class JFormFieldNN_HikaShop extends JFormField
 		if (!in_array($this->db->getPrefix() . 'hikashop_' . ($group == 'products' ? 'product' : 'category'), $tables)) {
 			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_HIKASHOP')) . '</fieldset>';
 		}
+
+		$this->params = $this->element->attributes();
+
+		$parameters = NNParameters::getInstance();
+		$params = $parameters->getPluginParams('nnframework');
+		$this->max_list_count = $params->max_list_count;
 
 		if (!is_array($this->value)) {
 			$this->value = explode(',', $this->value);
@@ -59,28 +66,28 @@ class JFormFieldNN_HikaShop extends JFormField
 
 	function getCategories()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('COUNT(*)')
+		$query = $this->db->getQuery(true)
+			->select('COUNT(*)')
 			->from('#__hikashop_category AS c')
 			->where('c.category_published > -1');
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
-		if ($total > 2500) {
+		if ($total > $this->max_list_count) {
 			return -1;
 		}
 
 		$show_ignore = $this->def('show_ignore');
 
-		$query = $this->db->getQuery(true);
-		$query->select('c.category_id')
+		$query->clear()
+			->select('c.category_id')
 			->from('#__hikashop_category AS c')
 			->where('c.category_type = ' . $this->db->quote('root'));
 		$this->db->setQuery($query);
 		$root = $this->db->loadResult();
 
-		$query = $this->db->getQuery(true);
-		$query->select('c.category_id as id, c.category_parent_id AS parent_id, c.category_name AS title, c.category_published as published')
+		$query->clear()
+			->select('c.category_id as id, c.category_parent_id AS parent_id, c.category_name AS title, c.category_published as published')
 			->from('#__hikashop_category AS c')
 			->where('c.category_type = ' . $this->db->quote('product'))
 			->where('c.category_published > -1')
@@ -122,8 +129,8 @@ class JFormFieldNN_HikaShop extends JFormField
 
 	function getProducts()
 	{
-		$query = $this->db->getQuery(true);
-		$query->select('p.product_id as id, p.product_name AS name, c.category_name AS cat, p.product_published AS published')
+		$query = $this->db->getQuery(true)
+			->select('p.product_id as id, p.product_name AS name, c.category_name AS cat, p.product_published AS published')
 			->from('#__hikashop_product AS p')
 			->join('LEFT', '#__hikashop_product_category AS x ON x.product_id = p.product_id')
 			->join('LEFT', '#__hikashop_category AS c ON c.category_id = x.category_id')
