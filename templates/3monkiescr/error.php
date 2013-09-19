@@ -166,7 +166,13 @@ $itemid   = $app->input->getCmd('Itemid', '');
         <footer>
             <div id="bottom">
                 <nav id="menu-bottom">
-                    <jdoc:include type="modules" name="menu-bottom" style="none" />
+                    
+                     <?php if (JModuleHelper::getModule('menu-bottom')) : ?>
+                        <?php
+										$module = JModuleHelper::getModule('menu-bottom');
+										echo JModuleHelper::renderModule($module);
+									?>
+						<?php endif; ?>
                 </nav>
                 <div id="redes">
                     <jdoc:include type="modules" name="redes" style="none" />
