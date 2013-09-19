@@ -50,6 +50,9 @@ else
 {
 	$logo = $this->baseurl . "/templates/" . $this->template . "/images/logo.png";
 }
+
+$doc->addStyleSheet('templates/'.$this->template.'/css/normalize.min.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" >
