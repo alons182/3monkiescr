@@ -38,7 +38,8 @@ if ($tipo == 'tour'){
 	<strong>Adults: </strong>'.  $data['Adults'].'<br />
 	<strong>Childrens:</strong> '.  $data['Childrens'].'<br />
 	<strong>Important Notes:</strong> '.  $data['notes'];
-
+	
+	$emailuser = $data['email'];
 }
 else
 	{
@@ -58,13 +59,14 @@ else
 		<strong>Last Name:</strong> '.$data['lnameP'].'<br />
 		<strong>Email:</strong> '.  $data['emailP'].'<br />
 		<strong>Important Notes:</strong> '.  $data['notesP'];
+		$emailuser = $data['emailP'];
 	}
 /*$config = JFactory::getConfig();
 $emailuser= array( 
 			$config->getValue( 'config.mailfrom' ),
 			$config->getValue( 'config.fromname' )
 			 );*/
-$emailuser = $data['email'];
+
 $destinatario = 'reservations@3monkiescr.com'; //$email_yokue;
 
 

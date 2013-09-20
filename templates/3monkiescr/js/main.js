@@ -217,13 +217,13 @@ $(function() {
 		    category:{
 		    	required: true,
 		    },
-		    Childrens: {
+		    /*Childrens: {
 
 		      required: true,
 
 		      number: true
 
-		    },
+		    },*/
 		     Adults: {
 
 		      required: true,
