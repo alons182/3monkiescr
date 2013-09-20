@@ -169,10 +169,10 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
 
         <script>
-            /*var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-44190344-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));*/
+            s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
 	<jdoc:include type="modules" name="debug" style="none" />
