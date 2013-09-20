@@ -354,6 +354,8 @@ footer #bottom #copyright,footer #bottom #redes,footer #bottom #patners{display:
 footer #bottom #redes,footer #bottom #copyright{margin-left:20px}
 }@media only screen and (max-width:  480px){body{background-color:#c6b199;background-image:none !important}
 #left-container{margin-left:5px;}
+#left-container #contenido #intro .intro-text{font-size:36px;margin-top:5%;}
+#left-container #contenido #intro .intro-text strong{font-size:60px}
 #left-container #contenido #content-article .tabs ul{position:static;}
 #left-container #contenido #content-article .tabs ul li{margin-bottom:5px}
 #left-container #menu-top .menu-top-item{display:block;margin-bottom:5px;width:98%;}
