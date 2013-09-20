@@ -362,7 +362,9 @@ footer #bottom #redes,footer #bottom #copyright{margin-left:20px}
 #left-container #menu-top .menu-top-item span,#left-container #menu-top .menu-top-item span.icon{display:inline-block;font-size:2em;padding-right:10px;vertical-align:middle}
 #left-container #menu-top .large{width:98% !important}
 #left-container #menu-top .navtoogle{width:98%}
-}@media only screen and (max-width:  320px){#left-container #reservationbox #dialog,#left-container #callbox #dialog,#left-container #contactbox #dialog{width:230px;}
+}@media only screen and (max-width:  320px){#left-container #contenido #intro .intro-text{font-size:26px;margin-top:5%;}
+#left-container #contenido #intro .intro-text strong{font-size:38px}
+#left-container #reservationbox #dialog,#left-container #callbox #dialog,#left-container #contactbox #dialog{width:230px;}
 #left-container #reservationbox #dialog .column1,#left-container #callbox #dialog .column1,#left-container #contactbox #dialog .column1,#left-container #reservationbox #dialog .column2,#left-container #callbox #dialog .column2,#left-container #contactbox #dialog .column2{display:block;width:100%}
 #left-container #reservationbox #dialogC,#left-container #callbox #dialogC,#left-container #contactbox #dialogC{width:230px}
 #left-container #reservationbox #dialogT,#left-container #callbox #dialogT,#left-container #contactbox #dialogT{width:230px}
