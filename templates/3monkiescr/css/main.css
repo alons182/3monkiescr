@@ -93,7 +93,7 @@ body{background-attachment:fixed;background-color:transparent;background-positio
 body > #wrap{height:auto;min-height:100%}
 .orange{background:#eeae11}
 .lime{background:#b9da00}
-.green{background:#416725}
+.green{background:#000}
 ::-webkit-input-placeholder{color:#999;font-size:13px;font-weight:300}
 :-moz-placeholder{color:#999;font-size:13px;font-weight:300}
 ::-moz-placeholder{color:#999;font-size:13px;font-weight:300}
@@ -146,7 +146,7 @@ body > #wrap{height:auto;min-height:100%}
 .bgid-152{background-image:url("../img/pattern.png"),url("../img/vandara.jpg")}
 .bgid-102{background-image:url("../img/pattern.png"),url("../img/bg.jpg")}
 .text404{background-color:rgba(255,255,255,0.9);padding:20px;}
-.text404 a{color:#416725}
+.text404 a{color:#000}
 p{color:#2b3f30}
 #left-container{float:left;margin-left:20px;}
 #left-container #menu-top{height:80px;}
@@ -172,7 +172,7 @@ p{color:#2b3f30}
 #left-container #menu-top .menu-top-item span{color:#fff;display:block;font-size:12px;text-decoration:none}
 #left-container #reservationbox .column1,#left-container #callbox .column1,#left-container #contactbox .column1,#left-container #reservationbox .column2,#left-container #callbox .column2,#left-container #contactbox .column2{display:inline-block;vertical-align:top;width:45%}
 #left-container #reservationbox .column1,#left-container #callbox .column1,#left-container #contactbox .column1{margin-right:40px}
-#left-container #reservationbox h1,#left-container #callbox h1,#left-container #contactbox h1{color:#416725;font-family:'Lato',sans-serif;font-size:24px;margin-bottom:10px;margin-top:0;text-transform:capitalize}
+#left-container #reservationbox h1,#left-container #callbox h1,#left-container #contactbox h1{color:#000;font-family:'Lato',sans-serif;font-size:24px;margin-bottom:10px;margin-top:0;text-transform:capitalize}
 #left-container #reservationbox p,#left-container #callbox p,#left-container #contactbox p{margin-bottom:6px;margin-top:0}
 #left-container #reservationbox label,#left-container #callbox label,#left-container #contactbox label{display:inline-block;font-size:14px;margin-bottom:2px}
 #left-container #reservationbox label.error,#left-container #callbox label.error,#left-container #contactbox label.error{color:#ee4035}
@@ -182,14 +182,14 @@ p{color:#2b3f30}
 #left-container #reservationbox .mensaje .ok,#left-container #callbox .mensaje .ok,#left-container #contactbox .mensaje .ok{background:#dff0d8;border:1px solid #d6e9c6}
 #left-container #reservationbox .mensaje .error,#left-container #callbox .mensaje .error,#left-container #contactbox .mensaje .error{background:#f2dede;border:1px solid #eed3d7}
 #left-container #reservationbox #dialog,#left-container #callbox #dialog,#left-container #contactbox #dialog{border-bottom:5px solid #eeae11;width:450px;}
-#left-container #reservationbox #dialog .close,#left-container #callbox #dialog .close,#left-container #contactbox #dialog .close{background:#416725}
+#left-container #reservationbox #dialog .close,#left-container #callbox #dialog .close,#left-container #contactbox #dialog .close{background:#000}
 #left-container #reservationbox #reservationFormTrans,#left-container #callbox #reservationFormTrans,#left-container #contactbox #reservationFormTrans{display:none}
 #left-container #reservationbox #dialogC,#left-container #callbox #dialogC,#left-container #contactbox #dialogC{border-bottom:5px solid #b9da00;left:120px;width:300px;}
 #left-container #reservationbox #dialogC h1,#left-container #callbox #dialogC h1,#left-container #contactbox #dialogC h1{color:#b9da00}
 #left-container #reservationbox #dialogC .close,#left-container #callbox #dialogC .close,#left-container #contactbox #dialogC .close{background:#b9da00}
-#left-container #reservationbox #dialogT,#left-container #callbox #dialogT,#left-container #contactbox #dialogT{border-bottom:5px solid #416725;left:220px;width:300px;}
-#left-container #reservationbox #dialogT h1,#left-container #callbox #dialogT h1,#left-container #contactbox #dialogT h1{color:#416725}
-#left-container #reservationbox #dialogT .close,#left-container #callbox #dialogT .close,#left-container #contactbox #dialogT .close{background:#416725}
+#left-container #reservationbox #dialogT,#left-container #callbox #dialogT,#left-container #contactbox #dialogT{border-bottom:5px solid #000;left:220px;width:300px;}
+#left-container #reservationbox #dialogT h1,#left-container #callbox #dialogT h1,#left-container #contactbox #dialogT h1{color:#000}
+#left-container #reservationbox #dialogT .close,#left-container #callbox #dialogT .close,#left-container #contactbox #dialogT .close{background:#000}
 #left-container #reservationbox .window,#left-container #callbox .window,#left-container #contactbox .window{background:#fff;display:none;padding:20px;position:fixed;top:90px;z-index:9999;}
 #left-container #reservationbox .window .close,#left-container #callbox .window .close,#left-container #contactbox .window .close{color:#fff;padding:24px 6px 6px 6px;position:absolute;right:10px;text-decoration:none;top:0}
 #left-container #contenido #intro .intro-text{color:#fff;font-family:'Lato',sans-serif;font-size:68px;font-weight:100;margin-bottom:0;margin-top:20%;}
@@ -225,7 +225,7 @@ p{color:#2b3f30}
 #left-container #contenido #content-article .details,#left-container #contenido #content-article .rates,#left-container #contenido #content-article .seasons{color:#2b3f30;}
 #left-container #contenido #content-article .details .detail,#left-container #contenido #content-article .rates .detail,#left-container #contenido #content-article .seasons .detail{display:block}
 #left-container #contenido #content-article .details .detail-title,#left-container #contenido #content-article .rates .detail-title,#left-container #contenido #content-article .seasons .detail-title{font-size:36px;margin-bottom:10px}
-#left-container #contenido #content-article .details .detail-subtitle,#left-container #contenido #content-article .rates .detail-subtitle,#left-container #contenido #content-article .seasons .detail-subtitle{color:#416725;font-size:16px;font-weight:bold;margin-top:10px}
+#left-container #contenido #content-article .details .detail-subtitle,#left-container #contenido #content-article .rates .detail-subtitle,#left-container #contenido #content-article .seasons .detail-subtitle{color:#000;font-size:16px;font-weight:bold;margin-top:10px}
 #left-container #contenido #content-article .details #detail_left,#left-container #contenido #content-article .rates #detail_left,#left-container #contenido #content-article .seasons #detail_left{float:left;width:50%}
 #left-container #contenido #content-article .details #detail_right,#left-container #contenido #content-article .rates #detail_right,#left-container #contenido #content-article .seasons #detail_right{float:right;text-align:right;width:50%}
 #left-container #contenido #content-article .details .iconos,#left-container #contenido #content-article .rates .iconos,#left-container #contenido #content-article .seasons .iconos{background:url("../img/iconos.png") no-repeat;display:inline-block;margin:5px;vertical-align:top}
@@ -252,7 +252,7 @@ p{color:#2b3f30}
 #left-container #contenido #content-article .tabs ul{float:right;margin:0;padding:0;position:absolute;right:20px;top:0;}
 #left-container #contenido #content-article .tabs ul #intro{background-color:#eeae11 !important}
 #left-container #contenido #content-article .tabs ul #details{background-color:#b9da00 !important}
-#left-container #contenido #content-article .tabs ul #rates,#left-container #contenido #content-article .tabs ul #map{background-color:#416725 !important}
+#left-container #contenido #content-article .tabs ul #rates,#left-container #contenido #content-article .tabs ul #map{background-color:#000 !important}
 #left-container #contenido #content-article .tabs ul #booknow{background-color:#ee4035 !important;}
 #left-container #contenido #content-article .tabs ul #booknow span{width:62px}
 #left-container #contenido #content-article .tabs ul li{background:#ccc;cursor:pointer;float:left;height:42px;list-style:none;margin:0 5px;opacity:.8;position:relative;}
@@ -294,7 +294,7 @@ p{color:#2b3f30}
 #right-container #logo img{margin-top:.5em}
 #right-container #menu ul{margin:.5em 0 0;padding:0;}
 #right-container #menu ul .orange:hover{background:#eeae11;opacity:1}
-#right-container #menu ul .green:hover{background:#416725;opacity:1}
+#right-container #menu ul .green:hover{background:#000;opacity:1}
 #right-container #menu ul .lime:hover{background:#b9da00;opacity:1}
 #right-container #menu ul .menu-item{background:#000;color:#fff;cursor:pointer;display:block;height:40px;line-height:40px;margin-bottom:5px;opacity:.8;overflow:hidden;padding-right:15px;text-align:right;transition:background .5s ease;width:195px;}
 #right-container #menu ul .menu-item a,#right-container #menu ul .menu-item span{color:#fff;display:block;font-size:12px;text-decoration:none;text-transform:uppercase}
@@ -302,7 +302,7 @@ p{color:#2b3f30}
 #right-container #menu ul .menu-item .submenu li{line-height:25px;list-style:none;margin-left:15px;text-align:left;}
 #right-container #menu ul .menu-item .submenu li a{display:block;font-size:12px;text-transform:none;width:100%}
 #right-container #menu ul .menu-item .submenu li a:hover{background:rgba(0,0,0,0.1)}
-footer{clear:both;height:40px;margin-top:-40px;position:relative;}
+footer{clear:both;height:40px;margin-top:-200px;position:relative;}
 footer #bottom{background:rgba(0,0,0,0.6);bottom:0;clear:both;height:40px;line-height:40px;position:absolute;position:absolute;width:100%;}
 footer #bottom #menu-bottom,footer #bottom #redes,footer #bottom #patners{display:inline-block;vertical-align:top}
 footer #bottom #menu-bottom ul{margin:0;}
