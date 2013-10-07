@@ -210,7 +210,7 @@ p{color:#2b3f30}
 #left-container #contenido #content-article #CDSWIDWRL,#left-container #contenido #content-article #CDSWIDSSP{width:100% !important}
 #left-container #contenido #content-article ul{color:#2b3f30}
 #left-container #contenido #content-article article{display:none;font-size:14px;font-weight:500;}
-#left-container #contenido #content-article article h2{color:#b9da00;font-family:'Lato',sans-serif;font-size:24px;margin-bottom:10px;margin-top:0;text-transform:capitalize}
+#left-container #contenido #content-article article h2{color:#b9da00;font-family:'Lato',sans-serif;font-size:24px;margin-bottom:10px;margin-top:0;text-transform:capitalize;max-width:500px}
 #left-container #contenido #content-article article h3{color:#eeae11}
 #left-container #contenido #content-article article .description-person,#left-container #contenido #content-article article .description-activitie,#left-container #contenido #content-article article .description-day,#left-container #contenido #content-article article .description-season{display:none}
 #left-container #contenido #content-article .team #p1,#left-container #contenido #content-article .team #p2,#left-container #contenido #content-article .team #p3{cursor:pointer}
