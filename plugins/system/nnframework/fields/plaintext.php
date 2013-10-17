@@ -4,7 +4,7 @@
  * Displays plain text as element
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -25,33 +25,43 @@ class JFormFieldNN_PlainText extends JFormField
 
 	protected function getLabel()
 	{
+		JHtml::stylesheet('nnframework/style.min.css', false, true);
+
 		$this->params = $this->element->attributes();
 		$label = $this->prepareText($this->def('label'));
-		if ($this->def('description') || $this->value) {
-			if ($this->def('description') && $this->value) {
-				$class = ' class="hasTip"';
-				$title = ' title="' . htmlentities($this->prepareText($this->def('description'))) . '"';
-				return '<label' . $class . $title . '>' . $label . '</label>';
-			}
-			return '<label>' . $label . '</label>';
+
+		$description = (trim($this->value) != '') ? trim($this->value) : $this->def('description');
+		$description = $this->prepareText($description);
+
+		if (!$label && !$description) {
+			return '';
 		}
-		return $label;
+
+		if (!$label) {
+			return '<div>' . $description . '</div>';
+		}
+
+		if (!$description) {
+			return '<div>' . $label . '</div>';
+		}
+
+		return '<label class="hasTooltip" title="' . htmlentities($description) . '">'
+			. $label . '</label>';
 	}
 
 	protected function getInput()
 	{
 		$this->params = $this->element->attributes();
-
-		JHtml::stylesheet('nnframework/style.min.css', false, true);
+		$label = $this->prepareText($this->def('label'));
 
 		$description = (trim($this->value) != '') ? trim($this->value) : $this->def('description');
 		$description = $this->prepareText($description);
 
-		if ($description != '' && $this->def('label') || $this->value) {
-			// display as label if there is more than just a description
-			return '<fieldset class="radio"><label>' . $description . '</label></fieldset>';
+		if (!$label || !$description) {
+			return '';
 		}
-		return $description;
+
+		return '<fieldset class="nn_plaintext">' . $description . '</fieldset>';
 	}
 
 	private function prepareText($str = '')

@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: Agents
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -82,7 +82,7 @@ class NNFrameworkAssignmentsAgents
 		$a = $browser->getAgentString();
 
 		$mobiles = array(
-			'android.+mobile',
+			'(android|bb\d+|meego).+mobile',
 			'avantgo',
 			'bada\/',
 			'blackberry',
@@ -99,6 +99,7 @@ class NNFrameworkAssignmentsAgents
 			'maemo',
 			'midp',
 			'mmp',
+			'mobile.+firefox',
 			'netfront',
 			'opera m(ob|in)i',
 			'palm( os)?',
@@ -107,6 +108,7 @@ class NNFrameworkAssignmentsAgents
 			'plucker',
 			'pocket',
 			'psp',
+			'series[46]0',
 			'symbian',
 			'treo',
 			'up\.(browser|link)',
@@ -114,7 +116,7 @@ class NNFrameworkAssignmentsAgents
 			'wap',
 			'windows (ce|phone)',
 			'xda',
-			'xiino/i'
+			'xiino'
 		);
 		if (preg_match('#(' . implode('|', $mobiles) . ')#i', $a)) {
 			return 1;
@@ -122,7 +124,7 @@ class NNFrameworkAssignmentsAgents
 
 		$a = substr($a, 0, 4);
 		$mobiles = array(
-			'/1207',
+			'1207',
 			'6310',
 			'6590',
 			'3gso',
@@ -222,7 +224,7 @@ class NNFrameworkAssignmentsAgents
 			'ma(te|ui|xo)',
 			'mc(01|21|ca)',
 			'm\-cr',
-			'me(di|rc|ri)',
+			'me(rc|ri)',
 			'mi(o8|oa|ts)',
 			'mmef',
 			'mo(01|02|bi|de|do|t[\- ov]|zz)',

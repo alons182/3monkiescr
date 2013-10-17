@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -28,6 +28,7 @@ class NNFrameworkAssignmentsHelper
 	var $passes = array();
 	var $maintype = '';
 	var $subtype = '';
+	var $cache = array();
 
 	function __construct()
 	{
@@ -144,7 +145,7 @@ class NNFrameworkAssignmentsHelper
 					$this->params->view = 'category';
 					break;
 				case 'com_breezingforms':
-					if($this->params->view == 'article') {
+					if ($this->params->view == 'article') {
 						$this->params->option = 'com_content';
 					}
 					break;
@@ -342,37 +343,48 @@ class NNFrameworkAssignmentsHelper
 
 	function getMenuItemParams($id = 0)
 	{
-		$this->q->clear()
-			->select('m.params')
-			->from('#__menu AS m')
-			->where('m.id = ' . (int) $id);
-		$this->db->setQuery($this->q);
-		$params = $this->db->loadResult();
+		$hash = 'MenuItemParams_' . $id;
 
-		$parameters = NNParameters::getInstance();
-		return $parameters->getParams($params);
+		if (!isset($this->cache[$hash])) {
+			$this->q->clear()
+				->select('m.params')
+				->from('#__menu AS m')
+				->where('m.id = ' . (int) $id);
+			$this->db->setQuery($this->q);
+			$params = $this->db->loadResult();
+
+			$parameters = NNParameters::getInstance();
+			$this->cache[$hash] = $parameters->getParams($params);
+		}
+
+		return $this->cache[$hash];
 	}
 
 	function getParentIds($id = 0, $table = 'menu', $parent = 'parent_id', $child = 'id')
 	{
-		$parent_ids = array();
-
 		if (!$id) {
-			return $parent_ids;
+			return array();
 		}
 
-		while ($id) {
-			$this->q->clear()
-				->select('t.' . $parent)
-				->from('#__' . $table . ' as t')
-				->where('t.' . $child . ' = ' . (int) $id);
-			$this->db->setQuery($this->q);
-			$id = $this->db->loadResult();
-			if ($id) {
-				$parent_ids[] = $id;
+		$hash = 'ParentIds_' . $id . '_' . $table . '_' . $parent . '_' . $child;
+
+		$parent_ids = array();
+		if (!isset($this->cache[$hash])) {
+			while ($id) {
+				$this->q->clear()
+					->select('t.' . $parent)
+					->from('#__' . $table . ' as t')
+					->where('t.' . $child . ' = ' . (int) $id);
+				$this->db->setQuery($this->q);
+				$id = $this->db->loadResult();
+				if ($id) {
+					$parent_ids[] = $id;
+				}
 			}
+			$this->cache[$hash] = $parent_ids;
 		}
-		return $parent_ids;
+
+		return $this->cache[$hash];
 	}
 
 	function makeArray($array = '', $onlycommas = 0, $trim = 1)
@@ -391,6 +403,7 @@ class NNFrameworkAssignmentsHelper
 				}
 			}
 		}
+
 		return $array;
 	}
 

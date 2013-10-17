@@ -2,7 +2,7 @@
  * Stylesheet for Element: ColorPicker
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -88,7 +88,7 @@
 .nncolorpicker-swatch:focus,
 .nncolorpicker-swatch span:focus {
   outline: 0;
-  outline: thin dotted  \9;
+  outline: thin dotted \9;
   /* IE6-9 */
 
 }

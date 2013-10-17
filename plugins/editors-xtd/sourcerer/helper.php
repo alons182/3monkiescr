@@ -3,7 +3,7 @@
  * Plugin Helper File
  *
  * @package         Sourcerer
- * @version         4.2.0
+ * @version         4.2.1
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -32,11 +32,8 @@ class plgButtonSourcererHelper
 	{
 		$button = new JObject;
 
-		if (JFactory::getApplication()->isSite()) {
-			$enable_frontend = $this->params->enable_frontend;
-			if (!$enable_frontend) {
-				return $button;
-			}
+		if (JFactory::getApplication()->isSite() && !$this->params->enable_frontend) {
+			return $button;
 		}
 
 		JHtml::_('behavior.modal');
@@ -54,12 +51,12 @@ class plgButtonSourcererHelper
 			$text = JText::_($this->params->button_text);
 		}
 
-		$button->set('modal', true);
-		$button->set('class', 'btn');
-		$button->set('link', $link);
-		$button->set('text', trim($text));
-		$button->set('name', $icon);
-		$button->set('options', "{handler: 'iframe', size: {x:window.getSize().x-100, y: window.getSize().y-100}}");
+		$button->modal = true;
+		$button->class = 'btn';
+		$button->link = $link;
+		$button->text = trim($text);
+		$button->name = $icon;
+		$button->options = "{handler: 'iframe', size: {x:window.getSize().x-100, y: window.getSize().y-100}}";
 
 		return $button;
 	}

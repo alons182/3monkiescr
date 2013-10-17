@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Protect
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -18,7 +18,8 @@ defined('_JEXEC') or die;
  */
 class NNProtect
 {
-	/* check if page should be protected for certain extensions
+	/**
+	 * check if page should be protected for certain extensions
 	*/
 	public static function isProtectedPage($ext = '', $hastags = 0)
 	{
@@ -37,7 +38,8 @@ class NNProtect
 		);
 	}
 
-	/* check if page is an admin page
+	/**
+	 * check if page is an admin page
 	*/
 	public static function isAdmin($block_login = 0)
 	{
@@ -45,6 +47,7 @@ class NNProtect
 		if ($block_login) {
 			$options[] = 'com_login';
 		}
+
 		return (
 			JFactory::getApplication()->isAdmin()
 			&& !in_array(JFactory::getApplication()->input->get('option'), $options)
@@ -52,7 +55,8 @@ class NNProtect
 		);
 	}
 
-	/* check if page is an edit page
+	/**
+	 * check if page is an edit page
 	*/
 	public static function isEditPage()
 	{
@@ -83,7 +87,8 @@ class NNProtect
 		);
 	}
 
-	/* the regular expression to mach the edit form
+	/**
+	 * the regular expression to mach the edit form
 	*/
 	public static function getFormRegex($regex_format = 0)
 	{
@@ -96,7 +101,46 @@ class NNProtect
 		return $regex;
 	}
 
-	/* protect complete adminForm (to prevent articles from being created when editing articles and such)
+	/**
+	 * protect tags in string
+	*/
+	public static function protectTags(&$str, $tags = array(), $protected = array())
+	{
+		if (!is_array($tags)) {
+			$tags = array($tags);
+		}
+
+		if (empty ($protected)) {
+			$protected = array();
+			foreach ($tags as $i => $tag) {
+				$protected[$i] = base64_encode($tag);
+			}
+		}
+
+		$str = str_replace($tags, $protected, $str);
+	}
+
+	/**
+	 * replace any protected tags to original
+	 */
+	public static function unprotectTags(&$str, $tags = array(), $protected = array())
+	{
+		if (!is_array($tags)) {
+			$tags = array($tags);
+		}
+
+		if (empty ($protected)) {
+			$protected = array();
+			foreach ($tags as $i => $tag) {
+				$protected[$i] = base64_encode($tag);
+			}
+		}
+
+		$str = str_replace($protected, $tags, $str);
+	}
+
+	/**
+	 * protect complete adminForm (to prevent articles from being created when editing articles and such)
 	*/
 	public static function protectForm(&$str, $tags = array(), $protected = array())
 	{
@@ -144,28 +188,63 @@ class NNProtect
 		$str = implode('', $str);
 	}
 
-	/* replace any protected tags to original
+	/**
+	 * replace any protected tags to original
 	*/
 	public static function unprotectForm(&$str, $tags = array(), $protected = array())
 	{
-		if (!is_array($tags)) {
-			$tags = array($tags);
-		}
-
-		if (empty ($protected)) {
-			$protected = array();
-			foreach ($tags as $i => $tag) {
-				$protected[$i] = base64_encode($tag);
-			}
-		}
-
-		$str = str_replace($protected, $tags, $str);
+		NNProtect::unprotectTags($str, $tags, $protected);
 	}
 
-	/* remove inline comments in scrips and styles
+	/**
+	 * remove inline comments in scrips and styles
 	*/
 	public static function removeInlineComments(&$str, $name)
 	{
 		$str = preg_replace('#\s*/\* (START|END): ' . $name . ' [a-z]* \*/\s*#s', "\n", $str);
+	}
+
+	/**
+	 * remove tags from title tags
+	*/
+	public static function removeFromHtmlTagContent(&$str, $tags, $htmltags = array('title'))
+	{
+		if (!is_array($tags)) {
+			$tags = array($tags);
+		}
+		if (!is_array($htmltags)) {
+			$htmltags = array($attribs);
+		}
+		if (preg_match_all('#(<('. implode('|', $htmltags). ')(?:\s[^>]*?)>)(.*?)(</\2>)#si', $str, $matches, PREG_SET_ORDER) > 0) {
+			foreach ($matches as $match) {
+				$content = $match['2'];
+				foreach ($tags as $tag) {
+					$content = preg_replace('#\{/?' . $tag . '.*?\}#si', '', $content);
+				}
+				$str = str_replace($match['0'], $match['1'] . $content . $match['3'], $str);
+			}
+		}
+	}
+
+	/**
+	 * remove tags from tag attributes
+	*/
+	public static function removeFromHtmlTagAttributes(&$str, $tags, $attribs = array('title', 'alt'))
+	{
+		if (!is_array($tags)) {
+			$tags = array($tags);
+		}
+		if (!is_array($attribs)) {
+			$attribs = array($attribs);
+		}
+		if (preg_match_all('#\s(?:'. implode('|', $attribs). ')\s*=\s*".*?"#si', $str, $matches, PREG_SET_ORDER) > 0) {
+			foreach ($matches as $match) {
+				$title = $match['0'];
+				foreach ($tags as $tag) {
+					$title = preg_replace('#\{/?' . $tag . '.*?\}#si', '', $title);
+				}
+				$str = str_replace($match['0'], $title, $str);
+			}
+		}
 	}
 }

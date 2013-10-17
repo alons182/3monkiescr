@@ -4,7 +4,7 @@
  * Does all the magic!
  *
  * @package         Sourcerer
- * @version         4.2.0
+ * @version         4.2.1
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -75,9 +75,7 @@ class plgSystemSourcerer extends JPlugin
 			return;
 		}
 
-		$this->_pass = 1;
-
-		// load the admin language file
+		// load the site language file
 		$lang = JFactory::getLanguage();
 		if ($lang->getTag() != 'en-GB') {
 			// Loads English language file as fallback (for undefined stuff in other language file)
@@ -88,12 +86,14 @@ class plgSystemSourcerer extends JPlugin
 		// Load plugin parameters
 		require_once JPATH_PLUGINS . '/system/nnframework/helpers/parameters.php';
 		$parameters = NNParameters::getInstance();
-		$params = $parameters->getPluginParams($this->_name, $this->_type, $this->params);
+		$params = $parameters->getPluginParams($this->_name);
 
 		// Include the Helper
 		require_once JPATH_PLUGINS . '/' . $this->_type . '/' . $this->_name . '/helper.php';
 		$class = get_class($this) . 'Helper';
 		$this->helper = new $class ($params);
+
+		$this->_pass = 1;
 	}
 
 	function onContentPrepare($context, &$article)

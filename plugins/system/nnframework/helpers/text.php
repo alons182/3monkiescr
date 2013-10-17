@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Text
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -247,5 +247,21 @@ class NNText
 		$matches = array_diff(array_unique($matches), array('', '-'));
 
 		return $matches;
+	}
+
+	static function getBody($html)
+	{
+		if (strpos($html, '<body') === false || strpos($html, '</body>') === false) {
+			return array('', $html, '');
+		}
+
+		$html_split = explode('<body', $html, 2);
+		$pre = $html_split['0'];
+		$body = '<body' . $html_split['1'];
+		$body_split = explode('</body>', $body);
+		$post = array_pop($body_split);
+		$body = implode('</body>', $body_split) . '</body>';
+
+		return array($pre, $body, $post);
 	}
 }

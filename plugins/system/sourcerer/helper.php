@@ -3,7 +3,7 @@
  * Plugin Helper File
  *
  * @package         Sourcerer
- * @version         4.2.0
+ * @version         4.2.1
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -63,16 +63,10 @@ class plgSystemSourcererHelper
 	{
 		$area = isset($article->created_by) ? 'articles' : 'other';
 
-		if (isset($article->created_by)) {
-			$user = JFactory::getUser($article->created_by);
-			$groups = $user->getAuthorisedGroups();
-			array_unshift($groups, -1);
 
-		}
-
-		if (isset($article->text) &&
-			($context != 'com_content.category' ||
-				!(JFactory::getApplication()->input->get('view') == 'category' && !JFactory::getApplication()->input->get('layout'))
+		if (isset($article->text)
+			&& ($context != 'com_content.category'
+				|| !(JFactory::getApplication()->input->get('view') == 'category' && !JFactory::getApplication()->input->get('layout'))
 			)
 		) {
 			$this->replace($article->text, $area, $article);
@@ -118,6 +112,7 @@ class plgSystemSourcererHelper
 				$this->replaceInTheRest($buffer);
 			}
 			JFactory::getDocument()->setBuffer($buffer, 'component');
+
 			return;
 		}
 
@@ -217,6 +212,7 @@ class plgSystemSourcererHelper
 				);
 			}
 		}
+
 		return $matches;
 	}
 
@@ -586,6 +582,7 @@ class plgSystemSourcererHelper
 		} else {
 			$str = preg_replace($search, $this->src_params->splitter . '\1' . $this->src_params->splitter, $str);
 		}
+
 		return explode($this->src_params->splitter, $str);
 	}
 

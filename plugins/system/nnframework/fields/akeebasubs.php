@@ -4,7 +4,7 @@
  * Displays a multiselectbox of available Akeeba Subsriptons levels
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -24,7 +24,7 @@ class JFormFieldNN_AkeebaSubs extends JFormField
 	protected function getInput()
 	{
 		if (!NNFrameworkFunctions::extensionInstalled('akeebasubs')) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
@@ -34,7 +34,7 @@ class JFormFieldNN_AkeebaSubs extends JFormField
 		$this->db = JFactory::getDBO();
 		$tables = $this->db->getTableList();
 		if (!in_array($this->db->getPrefix() . 'akeebasubs_' . $group, $tables)) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_AKEEBASUBS')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();

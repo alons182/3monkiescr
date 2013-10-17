@@ -4,7 +4,7 @@
  * Displays a multiselectbox of available Flexicontent Tags / Types
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -26,7 +26,7 @@ class JFormFieldNN_FlexiContent extends JFormField
 		$this->params = $this->element->attributes();
 
 		if (!NNFrameworkFunctions::extensionInstalled('flexicontent')) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_FLEXICONTENT')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_FLEXICONTENT')) . '</fieldset>';
 		}
 
 		$group = $this->def('group', 'categories');
@@ -34,7 +34,7 @@ class JFormFieldNN_FlexiContent extends JFormField
 		$this->db = JFactory::getDBO();
 		$tables = $this->db->getTableList();
 		if (!in_array($this->db->getPrefix() . 'flexicontent_' . $group, $tables)) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_FLEXICONTENT')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_FLEXICONTENT')) . '</fieldset>';
 		}
 
 		if (!is_array($this->value)) {

@@ -2,8 +2,8 @@
 <extension version="3.0" type="plugin" group="system" method="upgrade">
 	<name>PLG_SYSTEM_SOURCERER</name>
 	<description>PLG_SYSTEM_SOURCERER_DESC</description>
-	<version>4.2.0FREE</version>
-	<creationDate>August 2013</creationDate>
+	<version>4.2.1FREE</version>
+	<creationDate>September 2013</creationDate>
 	<author>NoNumber (Peter van Westen)</author>
 	<authorEmail>peter@nonumber.nl</authorEmail>
 	<authorUrl>http://www.nonumber.nl</authorUrl>

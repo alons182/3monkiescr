@@ -4,7 +4,7 @@
  * Displays a multiselectbox of available RedShop categories / products
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -25,7 +25,7 @@ class JFormFieldNN_RedShop extends JFormField
 	protected function getInput()
 	{
 		if (!NNFrameworkFunctions::extensionInstalled('redshop')) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_REDSHOP')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_REDSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
@@ -35,7 +35,7 @@ class JFormFieldNN_RedShop extends JFormField
 		$this->db = JFactory::getDBO();
 		$tables = $this->db->getTableList();
 		if (!in_array($this->db->getPrefix() . 'redshop_' . ($group == 'products' ? 'product' : 'category'), $tables)) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_REDSHOP')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_REDSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();

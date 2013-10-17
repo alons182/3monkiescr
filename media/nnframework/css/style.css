@@ -2,7 +2,7 @@
  * Main stylesheet
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -53,7 +53,7 @@
  * Stylesheet for font faces
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -243,6 +243,9 @@
 }
 .nn_tablelist td.has-context {
   height: 23px;
+}
+fieldset.nn_plaintext {
+  margin-top: 5px;
 }
 .nn_code {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;

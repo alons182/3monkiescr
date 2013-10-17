@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Functions
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
 
 class NNFrameworkFunctions
 {
-	var $_version = '13.8.5';
+	var $_version = '13.9.6';
 
 	public function getByUrl($url, $options = array())
 	{
@@ -46,7 +46,6 @@ class NNFrameworkFunctions
 		// only allow url calls to certain files
 		if (
 			strpos($url, 'download.nonumber.nl/extensions.php') === false
-			&& strpos($url, 'www.nonumber.nl/ext/extension.php') === false
 		) {
 			die;
 		}

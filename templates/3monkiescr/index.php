@@ -95,7 +95,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 
                      <div id="mascara"></div>
                      <div id="logo_animado">
-                         <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="210" height="130" id="Logo" align="middle">
+                         <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="210" height="130" id="Logo" >
                         <param name="movie" value="<?php echo $this->baseurl ?>/templates/3monkiescr/img/logo.swf" />
                         <param name="quality" value="high" />
                         <param name="bgcolor" value="#ffffff" />

@@ -4,7 +4,7 @@
  * Displays a multiselectbox of available MijoShop categories / products
  *
  * @package         NoNumber Framework
- * @version         13.8.5
+ * @version         13.9.6
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -27,7 +27,7 @@ class JFormFieldNN_MijoShop extends JFormField
 	protected function getInput()
 	{
 		if (!NNFrameworkFunctions::extensionInstalled('mijoshop')) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_FILES_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
@@ -37,7 +37,7 @@ class JFormFieldNN_MijoShop extends JFormField
 		$this->db = JFactory::getDBO();
 		$tables = $this->db->getTableList();
 		if (!in_array($this->db->getPrefix() . 'mijoshop_' . ($group == 'products' ? 'product' : 'category'), $tables)) {
-			return '<fieldset class="radio">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
+			return '<fieldset class="alert alert-danger">' . JText::_('ERROR') . ': ' . JText::sprintf('NN_TABLE_NOT_FOUND', JText::_('NN_MIJOSHOP')) . '</fieldset>';
 		}
 
 		$this->params = $this->element->attributes();
