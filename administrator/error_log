@@ -1,0 +1,4 @@
+[17-Oct-2013 12:54:40 America/Chicago] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/libraries/cms/installer/installer.php on line 1840
+[17-Oct-2013 12:54:40 America/Chicago] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/libraries/cms/installer/installer.php on line 1840
+[17-Oct-2013 12:54:40 America/Chicago] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/libraries/cms/installer/installer.php on line 1840
+[17-Oct-2013 12:54:40 America/Chicago] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/libraries/cms/installer/installer.php on line 1840
