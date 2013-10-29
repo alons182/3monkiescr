@@ -121,8 +121,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
                             <param name="salign" value="" />
                             <param name="allowScriptAccess" value="sameDomain" />
                         <!--<![endif]-->
-                            <a href="http://www.adobe.com/go/getflash">
-                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                            <a href="<?php echo $this->baseurl ?>">
+                                <img src="<?php echo $this->baseurl ?>/templates/3monkiescr/img/logo.png" alt="3monkiescr" />
                             </a>
                         <!--[if !IE]>-->
                         </object>
@@ -173,6 +173,15 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=363306470411928";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
         </script>
 
 	<jdoc:include type="modules" name="debug" style="none" />
