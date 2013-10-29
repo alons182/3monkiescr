@@ -193,6 +193,7 @@ p{color:#2b3f30}
 #left-container #reservationbox #dialogT .close,#left-container #callbox #dialogT .close,#left-container #contactbox #dialogT .close{background:#416725}
 #left-container #reservationbox .window,#left-container #callbox .window,#left-container #contactbox .window{background:#fff;display:none;padding:20px;position:fixed;top:90px;z-index:9999;}
 #left-container #reservationbox .window .close,#left-container #callbox .window .close,#left-container #contactbox .window .close{color:#fff;padding:24px 6px 6px 6px;position:absolute;right:10px;text-decoration:none;top:0}
+#left-container #contenido p{font-size:14px}
 #left-container #contenido #intro .intro-text{color:#fff;font-family:'Lato',sans-serif;font-size:68px;font-weight:100;margin-bottom:0;margin-top:20%;}
 #left-container #contenido #intro .intro-text strong{font-size:90px;font-weight:bold;text-transform:uppercase}
 #left-container #contenido #intro #descarga{background-color:#ee4035;float:left;margin-top:20px;max-height:250px;max-width:600px;min-height:60px;min-width:230px;overflow:hidden;position:relative;}
