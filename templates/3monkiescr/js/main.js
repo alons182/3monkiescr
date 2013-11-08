@@ -1,6 +1,7 @@
 
 
-$(function() {
+jQuery(function($) {
+
 
 	$menu			= $('#menu'),
 	$menuTop		= $('#menu-top'),
