@@ -559,10 +559,10 @@ jQuery(function($) {
     */
 
       var ie7 = '<div id="i_explorer">' + '<div id="i_explorer_overlay"></div>' + '<div id="i_explorer_content">' + '<p class="first">Lo sentimos pero&hellip;</p>' + '<p>&#8212;Este sitio no soporta tu Internet Explorer 8 o 7.</p>' + '<p>&#8212;Te recomiendo actualizar a la version 9 en <a href="http://www.microsoft.com/latam/windows/internet-explorer/" target="_blank">este link</a></p>' + '<p>&#8212;Ademas te recomiendo usar <a href="https://www.google.com/intl/es/chrome/browser/?hl=es" target="_blank">Google Chrome</a> para una mejor experiencia.</p>' + '<p>&#8212;Gracias :)</p>' + '</div>' + '<div>';
-  if ($.browser.msie && $.browser.version < "9.0") {
+  if ($.browser.msie && parseInt($.browser.version, 10) < 9) {
     $("body").append(ie7);
   }
-  
+
 
 });
 
