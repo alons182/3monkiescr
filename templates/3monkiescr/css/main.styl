@@ -1251,6 +1251,92 @@ footer
 				font-size 12px
 				text-decoration none
 
+/*
+|--------------------------------------------------------------------------
+| IE warning.
+|--------------------------------------------------------------------------
+*/
+
+#i_explorer
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 300000;
+	overflow: hidden;
+
+
+#i_explorer_overlay
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: #000;
+	-moz-opacity:.85;
+	opacity:.85;
+	overflow: hidden;
+
+
+#i_explorer_content 
+	position: absolute;
+	z-index: 310000;
+	height: 236px;
+	width: 735px;
+	margin-right: auto;
+	margin-left: auto;
+	left: 50%;
+	margin-left: -413px;
+	top: 165px;
+	background-color: $lima;
+	padding-top: 48px;
+	padding-right: 45px;
+	padding-bottom: 45px;
+	padding-left: 45px;
+	border: 1px solid #202600;
+
+
+#i_explorer_content p 
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #d7dcbe;
+	line-height: 1.875em;
+
+
+#i_explorer_content p a 
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+
+
+#i_explorer_content p a:hover 
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #404d00;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin-top: -2px;
+	margin-right: -5px;
+	margin-bottom: -2px;
+	margin-left: -5px;
+
+
+#i_explorer_content p.first 
+	font-size: 2em;
+	color: #ffffff;
+	background-image: url(../img/ie_warning.png);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	text-indent: 40px;
+	margin-bottom: 21px;
+
 @import "responsive.styl"
 					
 
