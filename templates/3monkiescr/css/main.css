@@ -337,7 +337,7 @@ footer #bottom #copyright a{color:#fff;font-size:12px;text-decoration:none}
 #i_explorer_content p{font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;font-size:1em;color:#d7dcbe;line-height:1.875em}
 #i_explorer_content p a{color:#fff;text-decoration:none;font-weight:bold}
 #i_explorer_content p a:hover{color:#fff;text-decoration:none;font-weight:bold;background-color:#404d00;padding-top:2px;padding-right:5px;padding-bottom:2px;padding-left:5px;margin-top:-2px;margin-right:-5px;margin-bottom:-2px;margin-left:-5px}
-#i_explorer_content p.first{font-size:2em;color:#fff;background-image:url("../img/ie_warning.png");background-repeat:no-repeat;background-position:left 15px;text-indent:40px;margin-bottom:21px}
+#i_explorer_content p.first{font-size:2em;color:#fff;background-image:url("../img/ie_warning.png");background-repeat:no-repeat;background-position:left 15px;text-indent:40px;margin:0}
 @media only screen and (min-width:  800px){#left-container #menu-top .menu{max-height:0 !important;overflow:hidden !important}
 }@media only screen and (max-width:  800px){html{min-width:100% !important}
 #right-container{display:none}
