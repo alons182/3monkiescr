@@ -331,7 +331,7 @@ footer #bottom #patners ul .item-193{background:url("../img/patners.png") -304px
 footer #bottom #patners ul .item-193:hover{background-position:-304px -53px}
 footer #bottom #copyright{float:right;margin-right:20px;}
 footer #bottom #copyright a{color:#fff;font-size:12px;text-decoration:none}
-#i_explorer{margin:0;padding:0;height:100%;width:100%;position:absolute;left:0;top:0;z-index:300000;overflow:hidden}
+i_explorer{margin:0;padding:0;height:100%;width:100%;position:absolute;left:0;top:0;z-index:300000;overflow:hidden}
 #i_explorer_overlay{margin:0;padding:0;height:100%;width:100%;left:0;top:0;background-color:#000;-moz-opacity:.85;opacity:.85;overflow:hidden}
 #i_explorer_content{position:absolute;z-index:310000;height:236px;width:735px;margin-right:auto;margin-left:auto;left:50%;margin-left:-413px;top:165px;background-color:#416725;padding-top:48px;padding-right:45px;padding-bottom:45px;padding-left:45px;border:1px solid #202600}
 #i_explorer_content p{font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;font-size:1em;color:#d7dcbe;line-height:1.875em}
