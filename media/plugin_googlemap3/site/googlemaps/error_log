@@ -1,0 +1,1414 @@
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:20 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[17-Oct-2013 16:08:38 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 17:10:30 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[18-Oct-2013 22:18:04 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 20:11:17 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[19-Oct-2013 23:58:40 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 12:21:42 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:45:11 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[21-Oct-2013 16:57:50 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[22-Oct-2013 23:53:34 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:24:22 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:10 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:26:53 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 09:31:24 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:21 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:18:54 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[23-Oct-2013 17:36:46 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[25-Oct-2013 16:27:12 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[26-Oct-2013 17:40:30 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 03:14:47 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[27-Oct-2013 21:32:44 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[28-Oct-2013 17:48:33 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[29-Oct-2013 12:13:21 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 11:23:33 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 15:13:03 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-Oct-2013 18:09:45 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[01-Nov-2013 12:46:09 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 11:50:58 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[02-Nov-2013 14:48:16 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:34:14 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 15:45:22 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:36:34 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:40:14 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[04-Nov-2013 17:47:21 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 19:52:58 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[05-Nov-2013 22:45:32 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[06-Nov-2013 08:29:58 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[07-Nov-2013 15:47:00 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[09-Nov-2013 13:22:28 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[09-Nov-2013 15:54:27 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[11-Nov-2013 10:20:12 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[11-Nov-2013 10:20:37 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[12-Nov-2013 15:39:57 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Deprecated:  Directive 'register_globals' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[12-Nov-2013 17:36:18 America/Chicago] PHP Fatal error:  Class 'JPluginHelper' not found in /home4/rigolir/public_html/3monkiescr.com/3monkiescr/media/plugin_googlemap3/site/googlemaps/googlemaps.css.php on line 68
