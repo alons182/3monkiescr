@@ -166,7 +166,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 
 
 
-        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.min.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-44190344-1'],['_trackPageview']];
